@@ -1,0 +1,54 @@
+block config
+  - var pageName = 'Kreatinc.Ltd' , description = 'Kreatinc is a team of web designers, developers, copy writers and marketing consultants'
+  - var team = ['Bilal', 'Rida', 'Ayoub', 'Hamza']
+
+
+doctype html
+html(lang='en')  
+  head
+    meta(charset="UTf-8")
+    title #{pageName} | #{description}
+    meta(name='description' content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel='stylesheet', href='css/main.min.css?cb=1')
+    link(rel="shortcut icon" href="img/favicon.ico")
+    link(rel="apple-touch-icon" href="img/apple-touch-icon.png")
+    link(rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png")
+    link(rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png")
+    // Twitter Card data
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:site" content="@kreatinc")
+    meta(name="twitter:creator" content="@kreatinc")
+    meta(name="twitter:title" content="Default template")
+    meta(name="twitter:description" content="Default template description")
+    meta(name="twitter:image" content="/img/default-social-media.jpg")
+    // Open Graph data
+    meta(property="og:title" content="Default template")
+    meta(property="og:description" content="Default template description")
+    meta(property="og:type" content="website")
+    meta(property="og:url" content="https://www.kreatinc.com")
+    meta(property="og:image" content="/img/default-social-media.jpg")
+    // If you don't need font awesome then delete this link
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css")
+
+    //- head
+    block head
+  body
+    include ../partials/header
+    main.container(style="min-height: 71vh")
+      block mainContent
+        p.lead.mb-5 #{description}
+        h3 Our TEAM
+        ul.list-group.mb-5
+          each member, i in team
+            li.list-group-item(class={active: member == 'Rida'}) member #{i+1}: #{member}
+
+    block footer
+      include ../partials/footer
+
+    //- scripts
+    block scripts
+      script(src="js/main.js?cb=1")
+
+    

@@ -1,0 +1,40 @@
+//- include doesn't let you changes what it comes from the includes file
+//- include layouts/base
+extend layouts/base
+
+block append config
+  //- - var pageName = 'Home page' , description = 'home page description'
+
+//- head
+block head
+  style.
+    body {
+      font-family: "nunito", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    }
+
+include partials/mixins
+
+//- block append and prepend
+block append mainContent
+  h6 Home page main content text #{pageName}
+  .row.mb-5
+    .col-4
+      +card('Card ONE', "logo.svg", 'A card is a flexible and extensible content container. It includes options for headers and footers,', 'Click Here')
+    .col-4
+      +card('Style Guide', "", 'Here is the style guide you can find here all the components that exist in this project.', 'Click Here')
+    .col-4
+      +card('Card two', "logo.svg", ' for headers and footers sdew asdf asdf safasdf asdfA card is a flexible and extensible ', 'Get Your')
+  
+  //- html code
+  - var htmlCode = `<a href="#" class="text-primary">${pageName}</a>`
+  p.mb-5.
+    The !{htmlCode} is an sit amet consectetur adipisicing elit. Cupiditate, expedita! Id dignissimos deserunt molestiae voluptas iste delectus illum vero beatae. Alias nulla unde odio fugit autem dolore. Quibusdam, nobis sequi.
+    Optio nam nulla impedit eveniet consectetur possimus quia quis blanditiis.
+    Doloremque quod id. Cumque fuga aspernatur deserunt? 
+
+//- footer
+append footer
+
+//- scrripts
+block append scripts
+  //- script(src="js/jsfile.js")

@@ -1,0 +1,13 @@
+//- card
+mixin card(title, imgSrc, desc, btnTitle)
+  .card
+    img.card-img-top(src=`./img/${imgSrc}` alt=title class={'d-none': imgSrc === ''})
+    .card-body
+      h5.card-title #{title}
+      p.card-text  #{desc}
+      if imgSrc === ''
+        a.btn.btn-lg.btn-block.btn-danger(href="#") #{btnTitle}
+      else
+        a.btn.btn-primary(href="#") #{btnTitle}
+
+//- +card('Card ONE', "logo.svg", 'text,', 'Click Here')
