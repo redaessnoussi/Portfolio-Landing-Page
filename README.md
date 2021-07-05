@@ -1,6 +1,5 @@
 # README #
 
--   Kreatinc Workflow
 -   Bootstrap 4 Project Starter
 -   Bootstrap Version 4.1.3
 
