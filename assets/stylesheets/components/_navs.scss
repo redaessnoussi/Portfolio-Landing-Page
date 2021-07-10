@@ -1,0 +1,27 @@
+.navbar-top{
+  li{
+    a{
+      font-size: 20px;
+      padding: 0!important;
+    }
+    &.active{
+      font-weight: bold;
+      &::before{
+        content: '';
+        border: solid $primary;
+        position: absolute;
+        bottom: 20px;
+        width: 20px;
+      }
+    }
+    .nav-link:hover{
+      &::before{
+        content: '';
+        border: solid $primary;
+        position: absolute;
+        bottom: 20px;
+        width: 20px;
+      }
+    }
+  }
+}
