@@ -11,24 +11,24 @@
 
 <header>
   <!-- Start: Navigation Menu -->
-  <div class="container px-0">
-    <nav class="bg-dark navbar navbar-dark navbar-expand-lg py-lg-4">
+  <div class="container-fluid px-0">
+    <nav class="bg-dark navbar navbar-dark navbar-expand-lg fixed-top py-lg-4 px-lg-5">
       <span class="navbar-brand mb-0 h1">Navbar</span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
         <ul class="navbar-nav navbar-top">
-          <li class="active mr-lg-4 nav-item">
+          <li class="active mr-lg-5 nav-item">
             <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
           </li>
-          <li class="mr-lg-4 nav-item">
+          <li class="mr-lg-5 nav-item">
             <a class="nav-link" href="#">ABOUT</a>
           </li>
-          <li class="mr-lg-4 nav-item">
+          <li class="mr-lg-5 nav-item">
             <a class="nav-link" href="#">SERVICES</a>
           </li>
-          <li class="mr-lg-4 nav-item">
+          <li class="mr-lg-5 nav-item">
             <a class="nav-link" href="#">WORKS</a>
           </li>
           <li class="nav-item">
@@ -42,13 +42,18 @@
 </header>
 <main>
   <!-- Start: Section 1 - Description -->
-  <div class="bg-secondary container py-5">
-    <div class="row align-items-center">
+  <div class="bg-secondary container-fluid p-5">
+    <div class="row align-items-center h-82">
       <div class="col-lg-6">
-        <h5 class="text-white">Frontend Developer</h5>
-        <h1 class="text-primary display-4 font-weight-bold">Alex <span class="text-white">Steel</span></h1>
-        <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo ex provident
-          laudantium animi numquam itaque architecto tenetur cum repudiandae? Nostrum!</p>
+        <h4 class="mb-lg-4 text-white">Frontend Developer</h4>
+        <h1 class="text-primary display-3 font-weight-bold">Alex <span class="text-white">Steel</span></h1>
+        <p class="mb-lg-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo ex provident
+          laudantium animi numquam itaque architecto tenetur cum repudiandae? Nostrum!
+        </p>
+        <div class="d-flex">
+          <button type="button" class="btn btn-dark btn-lg mr-lg-4">BIOGRAPHY</button>
+          <button type="button" class="btn btn-lg btn-primary">Hire Me</button>
+        </div>
       </div>
       <div class="col-lg-6">
         <img src="img/img01.jpg" alt="personal image" class="img-fluid">
@@ -58,40 +63,28 @@
   <!-- End: Section 1 - Description -->
 
   <!-- Start: Section 2 - About Me -->
-  <div class="container bg-dark py-5">
+  <div class="container-fluid bg-dark py-5">
     <div class="row align-items-center">
       <div class="col-lg-6">
-        <ul class="list-unstyled d-flex">
+        <ul class="list-unstyled d-flex justify-content-around">
           <li>
-            <div class="bg-secondary">
-              <div class="bg-primary">
-                <h4 class="mb-0">90+</h4>
-              </div>
-              <h4 class="mb-0">Happy Clients</h4>
+            <div class="badge-alt bg-secondary rounded-circle text-center text-white">
+              Happy Clients
             </div>
           </li>
           <li>
-            <div class="bg-secondary">
-              <div class="bg-primary">
-                <h4 class="mb-0">100+</h4>
-              </div>
-              <h4 class="mb-0">Projects Done</h4>
+            <div class="badge-alt bg-secondary rounded-circle text-center text-white">
+              Projects Done
             </div>
           </li>
           <li>
-            <div class="bg-secondary">
-              <div class="bg-primary">
-                <h4 class="mb-0">15+</h4>
-              </div>
-              <h4 class="mb-0">Projects In Progresss</h4>
+            <div class="badge-alt bg-secondary rounded-circle text-center text-white">
+              Projects In Progresss
             </div>
           </li>
           <li>
-            <div class="bg-secondary">
-              <div class="bg-primary">
-                <h4 class="mb-0">500+</h4>
-              </div>
-              <h4 class="mb-0">Working Hours</h4>
+            <div class="badge-alt bg-secondary rounded-circle text-center text-white">
+              Working Hours
             </div>
           </li>
         </ul>

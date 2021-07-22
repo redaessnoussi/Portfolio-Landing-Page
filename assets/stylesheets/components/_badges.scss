@@ -1,0 +1,22 @@
+.badge-alt {
+  overflow-wrap: break-word;
+  position: relative;
+  padding: 15px;
+  font-size: 14px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &::before {
+    content: '90+';
+    background-color: #007bff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 14px;
+    top: -20px;
+    left: 5px;
+  }
+}
