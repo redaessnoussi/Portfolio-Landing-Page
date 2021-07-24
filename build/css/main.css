@@ -9548,16 +9548,20 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .h-82 {
-  height: 82vh;
+  height: 91vh;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
 }
 
 .badge-alt {
   overflow-wrap: break-word;
   position: relative;
   padding: 15px;
-  font-size: 14px;
-  width: 100px;
-  height: 100px;
+  font-size: 24px;
+  width: 150px;
+  height: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9577,7 +9581,18 @@ a.text-dark:hover, a.text-dark:focus {
   text-align: center;
   border-radius: 50%;
   position: absolute;
-  font-size: 14px;
+  font-size: 20px;
   top: -20px;
   left: 5px;
+}
+
+.card-icon::before {
+  content: '';
+  height: 70px;
+  width: 70px;
+  background: #007bff;
+  position: absolute;
+  border-radius: 50%;
+  margin-top: -35px;
+  margin-left: 20px;
 }

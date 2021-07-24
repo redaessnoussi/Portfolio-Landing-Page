@@ -1,0 +1,10 @@
+.card-icon::before {
+  content: '';
+  height: 70px;
+  width: 70px;
+  background: #007bff;
+  position: absolute;
+  border-radius: 50%;
+  margin-top: -35px;
+  margin-left: 20px;
+}

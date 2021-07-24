@@ -2,9 +2,9 @@
   overflow-wrap: break-word;
   position: relative;
   padding: 15px;
-  font-size: 14px;
-  width: 100px;
-  height: 100px;
+  font-size: 24px;
+  width: 150px;
+  height: 140px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,7 +15,7 @@
     text-align: center;
     border-radius: 50%;
     position: absolute;
-    font-size: 14px;
+    font-size: 20px;
     top: -20px;
     left: 5px;
   }
