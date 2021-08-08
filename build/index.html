@@ -1,397 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
 
-<header>
-  <!-- Start: Navigation Menu -->
-  <div class="container-fluid px-0">
-    <nav class="bg-dark navbar navbar-dark navbar-expand-lg fixed-top py-lg-4 px-lg-5">
-      <span class="navbar-brand mb-0 h1">Navbar</span>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav navbar-top">
-          <li class="active mr-lg-5 nav-item">
+<body data-spy="scroll" data-target="#top-menu" data-offset="50">
+
+  <header>
+    <!-- Start: Navigation Menu -->
+    <nav id="top-menu" class="top-menu navbar navbar-dark navbar-expand-lg fixed-top py-lg-4 px-200">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" height="40" alt="logo" class="d-none">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav navbar-top">
+            <li class="mr-lg-5 nav-item">
+              <a class="nav-link" href="#home">HOME<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="mr-lg-5 nav-item">
+              <a class="nav-link" href="#description">ABOUT</a>
+            </li>
+            <li class="mr-lg-5 nav-item">
+              <a class="nav-link" href="#services">SERVICES</a>
+            </li>
+            <li class="mr-lg-5 nav-item">
+              <a class="nav-link" href="#expertise">SKILLS</a>
+            </li>
+            <li class="mr-lg-5 nav-item">
+              <a class="nav-link" href="#portfolio">WORKS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!-- End: Navigation Menu -->
+  </header>
+
+  <main>
+
+    <!-- Start: Section 1 - Description -->
+    <div id="home" class="w-100" style="position: absolute; top: 0;">
+      <div class="bg-secondary container-fluid" style="position: fixed;top: 0;">
+        <div class="align-items-center vh-100 px-200 row">
+          <div class="col-lg-5">
+            <h3 class="mb-lg-4 text-white">Frontend Developer</h3>
+            <h1 class="text-primary display-3 font-weight-bold">Alex <span class="text-white">Steel</span></h1>
+            <p class="mb-lg-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo ex
+              provident
+              laudantium animi numquam itaque architecto tenetur cum repudiandae? Nostrum!
+            </p>
+            <div class="d-flex">
+              <button type="button" class="btn btn-info btn-lg mr-lg-4 text-white">BIOGRAPHY</button>
+              <button type="button" class="btn btn-lg btn-primary">Hire Me</button>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <img src="img/img02.png" alt="personal image" class="img-fluid" width="1000">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- End: Section 1 - Description -->
+
+    <div style="margin-top: 100vh;position: relative;z-index: 2;">
+      
+      <!-- Start: Section 2 - About Me -->
+      <div id="description" class="bg-dark container-fluid px-200 py-5">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-5">
+            <ul class="d-flex flex-wrap justify-content-around list-unstyled mb-0">
+              <li>
+                <div class="badge-alt bg-white rounded-circle text-center">
+                  Happy Clients
+                </div>
+              </li>
+              <li class="ml-5">
+                <div class="badge-alt bg-white rounded-circle text-center">
+                  Projects Done
+                </div>
+              </li>
+              <li class="ml-5 mt-5">
+                <div class="badge-alt bg-white rounded-circle text-center">
+                  Projects In Progresss
+                </div>
+              </li>
+              <li class="ml-5 mt-5">
+                <div class="badge-alt bg-white rounded-circle text-center">
+                  Working Hours
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="text-white">About Me</h3>
+            <h1 class="text-primary font-weight-bold">Unleash Your Creativity</h1>
+            <h4 class="text-white">A Lead UX &amp; UI Designer based in Canada, with 8+ Years of Experience</h4>
+            <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ullam, quidem officiis
+              nemo voluptatum dolorum est deleniti consequatur ad totam!</p>
+            <a href="#" class="btn btn-info text-white px-5">Download CV</a>
+          </div>
+        </div>
+      </div>
+      <!-- End: Section 2 - About Me -->
+
+      <!-- Start: Section 3 - My Services -->
+      <div id="services" class="bg-white container-fluid px-200 py-5 text-center" style="position: relative;
+      z-index: 2;">
+        <h3>My Services</h3>
+        <h1 class="font-weight-bold text-primary mb-100">What Can I Do Best ?</h1>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="bg-dark card card-icon shadow-sm">
+              <div class="card-body text-left text-white">
+                <h4 class="mt-5">Website Design</h4>
+                <hr class="bg-primary">
+                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="bg-dark card card-icon shadow-sm">
+              <div class="card-body text-left text-white">
+                <h4 class="mt-5">Brand Identity</h4>
+                <hr class="bg-primary">
+                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="bg-dark card card-icon shadow-sm">
+              <div class="card-body text-left text-white">
+                <h4 class="mt-5">Logo Design</h4>
+                <hr class="bg-primary">
+                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="bg-dark card card-icon shadow-sm">
+              <div class="card-body text-left text-white">
+                <h4 class="mt-5">Mobile App Design</h4>
+                <hr class="bg-primary">
+                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End: Section 3 - My Services -->
+
+      <!-- Start: Section 4 - Expertise -->
+      <div id="expertise" class="bg-dark container-fluid px-200 py-5" style="position: relative;z-index: 2;">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="text-white">Expertise</h3>
+            <h1 class="text-primary font-weight-bold">My Skills &amp; Tools</h1>
+            <h4 class="text-white">Every Day is a New Challenge</h4>
+            <p class="text-white">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae nesciunt obcaecati accusamus eos? Sequi,
+              amet!
+            </p>
+            <button class="btn btn-info text-white px-5">Hire Me</button>
+          </div>
+          <div class="col-lg-6">
+            <div class="align-items-center row mb-4">
+              <div class="col-4">
+                <h5 class="mb-0 text-white">HTML/HTML5</h5>
+              </div>
+              <div class="col">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="align-items-center row mb-4">
+              <div class="col-4">
+                <h5 class="mb-0 text-white">JS/jQuery</h5>
+              </div>
+              <div class="col">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="align-items-center row mb-4">
+              <div class="col-4">
+                <h5 class="mb-0 text-white">CSS/Sass/Bootstrap</h5>
+              </div>
+              <div class="col">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="align-items-center row mb-4">
+              <div class="col-4">
+                <h5 class="mb-0 text-white">ReactJS</h5>
+              </div>
+              <div class="col">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="align-items-center row">
+              <div class="col-4">
+                <h5 class="mb-0 text-white">Git/GitHub</h5>
+              </div>
+              <div class="col">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- End: Section 4 - Expertise -->
+
+      <!-- Start: Section 5 - Portfolio -->
+      <div id="portfolio" class="bg-white container-fluid px-200 py-5" style="position: relative;z-index: 2;">
+        <div class="align-items-end justify-content-between row mb-5">
+          <div class="col-lg-5">
+            <h3>Portfolio</h3>
+            <h1 class="text-primary font-weight-bold mb-0">My Creative Work</h1>
+          </div>
+          <div class="col-lg-auto">
+            <nav class="nav nav-pills nav-justified">
+              <a class="nav-link active" href="#">ALL</a>
+              <a class="nav-link" href="#">WEB DESIGN</a>
+              <a class="nav-link" href="#">LOGO DESIGN</a>
+              <a class="nav-link" href="#">BRANDING</a>
+              <a class="nav-link" href="#">APPS DESIGN</a>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card shadow-sm border-0">
+              <div class="card-body">
+                <p>Projects</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card shadow-sm border-0">
+              <div class="card-body">
+                <p>Projects</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card shadow-sm border-0">
+              <div class="card-body">
+                <p>Projects</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End: Section 5 - Portfolio -->
+
+      <!-- Start: Section 7 - Contact -->
+      <div id="contact" class="bg-dark container-fluid px-200 py-5" style="position: relative;
+      z-index: 2;">
+        <div class="row">
+          <div class="col-lg-5">
+            <img src="img/logo.png" class="d-none">
+            <h1 class="font-weight-bold my-4 text-primary">My Skills &amp; Tools</h1>
+            <p class="text-white mb-4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae nesciunt obcaecati accusamus eos? Sequi,
+              amet!
+            </p>
+            <p class="text-white"><strong class="fwMedium">© <a href="=&quot;javascript:void(0);&quot;">SmithJohnson</a>
+                2020 | All Rights Reserved</strong></p>
+          </div>
+          <div class="col-lg-7">
+            <h4 class="text-white">Any Question?</h4>
+            <h1 class="text-primary font-weight-bold">Drop Me A Line</h1>
+            <form id="contact-form" role="form">
+              <div class="controls text-white">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group"> <label for="form_name">Firstname</label> <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname" required="required" data-error="Firstname is required."> </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group"> <label for="form_lastname">Lastname</label> <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required."> </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="form_email">Email</label>
+                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="form_phone">Phone</label>
+                      <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="form-group"> <label for="form_message">Message</label>
+                      <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <button type="submit" class="btn btn-info text-white px-5">Send Message</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- End: Section 7 - Contact -->
+    </div>
+
+  </main>
+
+  <!-- Start: Footer -->
+  <footer>
+    <div class="container-fluid px-0">
+      <nav class="navbar navbar-dark navbar-expand-lg px-200">
+        <ul class="navbar-nav">
+          <li class="mr-4 nav-item">
             <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
           </li>
-          <li class="mr-lg-5 nav-item">
+          <li class="mr-4 nav-item">
             <a class="nav-link" href="#">ABOUT</a>
           </li>
-          <li class="mr-lg-5 nav-item">
+          <li class="mr-4 nav-item">
             <a class="nav-link" href="#">SERVICES</a>
           </li>
-          <li class="mr-lg-5 nav-item">
+          <li class="mr-4 nav-item">
             <a class="nav-link" href="#">WORKS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">CONTACT</a>
           </li>
         </ul>
-      </div>
-    </nav>
-  </div>
-  <!-- End: Navigation Menu -->
-</header>
-<main>
-  <!-- Start: Section 1 - Description -->
-  <div class="bg-secondary container-fluid p-5">
-    <div class="row align-items-center h-82">
-      <div class="col-lg-6">
-        <h3 class="mb-lg-4 text-white">Frontend Developer</h3>
-        <h1 class="text-primary display-3 font-weight-bold">Alex <span class="text-white">Steel</span></h1>
-        <p class="mb-lg-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo ex provident
-          laudantium animi numquam itaque architecto tenetur cum repudiandae? Nostrum!
-        </p>
-        <div class="d-flex">
-          <button type="button" class="btn btn-dark btn-lg mr-lg-4">BIOGRAPHY</button>
-          <button type="button" class="btn btn-lg btn-primary">Hire Me</button>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <img src="img/img01.jpg" alt="personal image" class="img-fluid">
-      </div>
+      </nav>
     </div>
-  </div>
-  <!-- End: Section 1 - Description -->
+  </footer>
+  <!-- End: Footer -->
+  <script src="js/main.js"></script>
+  <script>
+    //Top Menu Addinh Bg Dark on Load
+    $(document).ready(function () {
+      if ($(this).scrollTop() > 5) {
+        $("#top-menu").addClass("bg-dark");
+      }
+    });
 
-  <!-- Start: Section 2 - About Me -->
-  <div class="container-fluid bg-dark py-5">
-    <div class="row align-items-center">
-      <div class="col-lg-5">
-        <ul class="d-flex flex-wrap justify-content-around list-unstyled mb-0">
-          <li>
-            <div class="badge-alt bg-secondary rounded-circle text-center text-white">
-              Happy Clients
-            </div>
-          </li>
-          <li class="ml-5">
-            <div class="badge-alt bg-secondary rounded-circle text-center text-white">
-              Projects Done
-            </div>
-          </li>
-          <li class="ml-5 mt-4">
-            <div class="badge-alt bg-secondary rounded-circle text-center text-white">
-              Projects In Progresss
-            </div>
-          </li>
-          <li class="ml-5 mt-4">
-            <div class="badge-alt bg-secondary rounded-circle text-center text-white">
-              Working Hours
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="col-lg-6">
-        <h3 class="text-white">About Me</h3>
-        <h1 class="text-primary font-weight-bold">Unleash Your Creativity</h1>
-        <h4 class="text-white">A Lead UX &amp; UI Designer based in Canada, with 8+ Years of Experience</h4>
-        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ullam, quidem officiis nemo voluptatum dolorum est deleniti consequatur ad totam!</p>
-        <a href="#" class="btn btn-lg btn-outline-primary px-5">Download CV</a>
-      </div>
-    </div>
-  </div>
-  <!-- End: Section 2 - About Me -->
+    //Top Menu Addinh Bg Dark on Scrolling
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 5) {
+        $("#top-menu").addClass("bg-dark");
+      } else {
+        $("#top-menu").removeClass("bg-dark");
+      }
+    });
 
-  <!-- Start: Section 3 - My Services -->
-  <div class="container-fluid bg-secondary py-5 text-center">
-    <h3 class="text-white">My Services</h3>
-    <h1 class="font-weight-bold text-primary mb-100">What Can I Do Best ?</h1>
-    <div class="row">
-      <div class="col-lg-3">
-        <div class="bg-dark card card-icon">
-          <div class="card-body text-left text-white">
-            <h4 class="mt-5 text-whitex">Website Design</h4>
-            <hr class="bg-primary">
-            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="bg-dark card card-icon">
-          <div class="card-body text-left text-white">
-            <h4 class="mt-5 text-whitex">Brand Identity</h4>
-            <hr class="bg-primary">
-            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="bg-dark card card-icon">
-          <div class="card-body text-left text-white">
-            <h4 class="mt-5 text-whitex">Logo Design</h4>
-            <hr class="bg-primary">
-            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="bg-dark card card-icon">
-          <div class="card-body text-left text-white">
-            <h4 class="mt-5 text-whitex">Mobile App Design</h4>
-            <hr class="bg-primary">
-            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End: Section 3 - My Services -->
+    //Scroll Spy Funtion
+    $('body').scrollspy({ target: '#top-menu' })
 
-  <!-- Start: Section 4 - Expertise -->
-  <div class="container-fluid bg-dark py-5">
-    <div class="row">
-      <div class="col-lg-6">
-        <h3 class="text-white">Expertise</h3>
-        <h1 class="text-primary font-weight-bold">My Skills &amp; Tools</h1>
-        <h4 class="text-white">Every Day is a New Challenge</h4>
-        <p class="text-white">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae nesciunt obcaecati accusamus eos? Sequi, amet!
-        </p>
-        <button class="btn btn-outline-primary btn-lg px-5">Hire Me</button>
-      </div>
-      <div class="col-lg-6">
-        <div class="align-items-center row mb-4">
-          <div class="col-4">
-            <h5 class="mb-0 text-white">HTML/HTML5</h5>
-          </div>
-          <div class="col">
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
+    // Add smooth scrolling on all links inside the navbar
+    $("#top-menu a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
 
-        <div class="align-items-center row mb-4">
-          <div class="col-4">
-            <h5 class="mb-0 text-white">JS/jQuery</h5>
-          </div>
-          <div class="col">
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
+  </script>
 
-        <div class="align-items-center row mb-4">
-          <div class="col-4">
-            <h5 class="mb-0 text-white">CSS/Sass/Bootstrap</h5>
-          </div>
-          <div class="col">
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="align-items-center row mb-4">
-          <div class="col-4">
-            <h5 class="mb-0 text-white">ReactJS</h5>
-          </div>
-          <div class="col">
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="align-items-center row">
-          <div class="col-4">
-            <h5 class="mb-0 text-white">Git/GitHub</h5>
-          </div>
-          <div class="col">
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-  <!-- End: Section 4 - Expertise -->
-
-  <!-- Start: Section 5 - Portfolio -->
-  <div class="container-fluid bg-secondary py-5">
-    <div class="align-items-end justify-content-between row mb-5">
-      <div class="col-lg-5">
-        <h3 class="text-white">Portfolio</h3>
-        <h1 class="text-primary font-weight-bold mb-0">My Creative Work</h1>
-      </div>
-      <div class="col-lg-auto">
-        <nav class="nav nav-pills nav-justified">
-          <a class="nav-link active" href="#">ALL</a>
-          <a class="nav-link" href="#">WEB DESIGN</a>
-          <a class="nav-link" href="#">LOGO DESIGN</a>
-          <a class="nav-link" href="#">BRANDING</a>
-          <a class="nav-link" href="#">APPS DESIGN</a>
-        </nav>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <p>Projects</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <p>Projects</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <p>Projects</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End: Section 5 - Portfolio -->
-
-  <!-- Start: Section 6 - Testimonials -->
-  <div class="container-fluid bg-dark py-5">
-    <div class="row align-items-end">
-      <div class="col-lg-4">
-        <h3 class="text-white">Testimonials</h3>
-        <h1 class="text-primary font-weight-bold mb-5">Happy Clients</h1>
-        <ul class="d-flex flex-wrap justify-content-around list-unstyled mb-0">
-          <li class="mb-5">
-            <img src="img/logo-erikson.png" alt="logo-erikson">
-          </li>
-          <li class="mb-5">
-            <img src="img/logo-helsinki.png" alt="logo-helsinki">
-          </li>
-          <li>
-            <img src="img/logo-helsinki2.png" alt="logo-helsinki2">
-          </li>
-          <li>
-            <img src="img/logo-norway.png" alt="logo-norway">
-          </li>
-        </ul>
-      </div>
-      <div class="col-lg-7">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <!-- <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li> -->
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, atque similique? Repellendus iure nisi ipsam.</p>
-            </div>
-            <!-- <div class="carousel-item">
-              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, atque similique? Repellendus iure nisi ipsam.</p>
-            </div>
-            <div class="carousel-item">
-              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, atque similique? Repellendus iure nisi ipsam.</p>
-            </div> -->
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End: Section 6 - Testimonials -->
-
-  <!-- Start: Section 7 - Contact -->
-  <div class="bg-secondary container-fluid py-5">
-    <div class="row">
-      <div class="col-lg-5">
-        <h1 class="text-primary font-weight-bold">My Skills &amp; Tools</h1>
-        <p class="text-white">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae nesciunt obcaecati accusamus eos? Sequi, amet!
-        </p>
-      </div>
-      <div class="col-lg-7">
-        <h4 class="text-white">Any Question?</h4>
-        <h1 class="text-primary font-weight-bold">Drop Me A Line</h1>
-        <form id="contact-form" role="form">
-          <div class="controls text-white">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="form-group"> <label for="form_name">Firstname</label> <input id="form_name" type="text" name="name" class="form-control form-control-lg" placeholder="Please enter your firstname" required="required" data-error="Firstname is required."> </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="form-group"> <label for="form_lastname">Lastname</label> <input id="form_lastname" type="text" name="surname" class="form-control form-control-lg" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required."> </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="form-group"> 
-                  <label for="form_email">Email</label> 
-                  <input id="form_email" type="email" name="email" class="form-control form-control-lg" placeholder="Please enter your email" required="required" data-error="Valid email is required."> </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="form-group"> 
-                  <label for="form_phone">Phone</label> 
-                  <input id="form_phone" type="tel" name="phone" class="form-control form-control-lg" placeholder="Please enter your phone"> 
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="form-group"> <label for="form_message">Message</label> 
-                  <textarea id="form_message" name="message" class="form-control form-control-lg" placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message."></textarea> 
-                  </div>
-              </div>
-              <div class="col-lg-12"> 
-                <input type="submit" class="btn btn-outline-success btn-lg px-5" value="Send Message"> 
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <!-- End: Section 7 - Contact -->
-</main>
-
-<!-- Start: Footer -->
-<footer>
-  <div class="container-fluid px-0">
-    <nav class="bg-primary navbar navbar-dark navbar-expand-lg">
-      <ul class="navbar-nav">
-        <li class="active mr-4 nav-item">
-          <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="mr-4 nav-item">
-          <a class="nav-link" href="#">ABOUT</a>
-        </li>
-        <li class="mr-4 nav-item">
-          <a class="nav-link" href="#">SERVICES</a>
-        </li>
-        <li class="mr-4 nav-item">
-          <a class="nav-link" href="#">WORKS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">CONTACT</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</footer>
-<!-- End: Footer -->
-<script src="js/main.js"></script>
 </body>
+
 </html>

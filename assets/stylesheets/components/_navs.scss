@@ -1,25 +1,53 @@
 .navbar-top{
   li{
-    a{
-      font-size: 18px;
-      padding: 0!important;
+    .nav-link{
+      position: relative;
+      padding-bottom: 10px!important;
     }
-    &.active{
+    a{
+      font-size: 16px;
+      padding: 0!important;
+      transition: color 0.3s ease;
       font-weight: bold;
-      &::before{
-        content: '';
-        border: solid $primary;
-        position: absolute;
-        bottom: 20px;
-        width: 20px;
+      &.active{
+        color: $primary!important;
+        &::after{
+          content: '';
+          border: solid $primary;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 20px;
+          transform: scaleX(1);
+          opacity: 1;
+          visibility: 1;
+          transition: opacity, 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+          transform-origin: 0 0 0;
+        }
+      }
+      &:not(.active){
+        &::after{
+          content: '';
+          border: solid $primary;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 20px;
+          transition: opacity, 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+          opacity: 0;
+          visibility: hidden;
+          transform: scaleX(0);
+          transform-origin: 0 0 0;
+        }
       }
     }
     .nav-link:hover{
-      &::before{
+      &::after{
         content: '';
         border: solid $primary;
         position: absolute;
-        bottom: 20px;
+        bottom: 0;
+        left: 0;
         width: 20px;
       }
     }
