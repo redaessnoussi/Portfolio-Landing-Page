@@ -9606,6 +9606,11 @@ a.text-dark:hover, a.text-dark:focus {
   padding-right: 180px;
 }
 
+.py-128 {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+
 .text-large {
   font-size: 24px;
 }
@@ -9631,9 +9636,10 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .badge-alt::before {
-  content: '90+';
+  content: attr(counter);
   background-color: #0000FF;
   color: #fff;
+  width: 55px;
   padding: 10px;
   text-align: center;
   border-radius: 50%;

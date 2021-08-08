@@ -76,27 +76,27 @@
     <div style="margin-top: 100vh;position: relative;z-index: 2;">
       
       <!-- Start: Section 2 - About Me -->
-      <div id="description" class="bg-dark container-fluid px-180 py-5">
+      <div id="description" class="bg-dark container-fluid px-180 py-128">
         <div class="row align-items-center justify-content-between">
           <div class="col-lg-5">
             <ul class="d-flex flex-wrap justify-content-around list-unstyled mb-0">
               <li>
-                <div class="badge-alt bg-white rounded-circle text-center">
+                <div class="badge-alt bg-white rounded-circle text-center" counter="150">
                   Happy Clients
                 </div>
               </li>
               <li class="ml-5">
-                <div class="badge-alt bg-white rounded-circle text-center">
+                <div class="badge-alt bg-white rounded-circle text-center" counter="12">
                   Projects Done
                 </div>
               </li>
               <li class="ml-5 mt-5">
-                <div class="badge-alt bg-white rounded-circle text-center">
+                <div class="badge-alt bg-white rounded-circle text-center" counter="3">
                   Projects In Progresss
                 </div>
               </li>
               <li class="ml-5 mt-5">
-                <div class="badge-alt bg-white rounded-circle text-center">
+                <div class="badge-alt bg-white rounded-circle text-center" counter="95">
                   Working Hours
                 </div>
               </li>
@@ -115,7 +115,7 @@
       <!-- End: Section 2 - About Me -->
 
       <!-- Start: Section 3 - My Services -->
-      <div id="services" class="bg-white container-fluid px-180 py-5 text-center" style="position: relative;
+      <div id="services" class="bg-white container-fluid px-180 py-128 text-center" style="position: relative;
       z-index: 2;">
         <h3>My Services</h3>
         <h1 class="font-weight-bold text-primary mb-100">What Can I Do Best ?</h1>
@@ -161,7 +161,7 @@
       <!-- End: Section 3 - My Services -->
 
       <!-- Start: Section 4 - Expertise -->
-      <div id="expertise" class="bg-dark container-fluid px-180 py-5" style="position: relative;z-index: 2;">
+      <div id="expertise" class="bg-dark container-fluid px-180 py-128" style="position: relative;z-index: 2;">
         <div class="row">
           <div class="col-lg-6">
             <h3 class="mb-lg-4 text-white">Expertise</h3>
@@ -235,7 +235,7 @@
       <!-- End: Section 4 - Expertise -->
 
       <!-- Start: Section 5 - Portfolio -->
-      <div id="portfolio" class="bg-white container-fluid px-180 py-5" style="position: relative;z-index: 2;">
+      <div id="portfolio" class="bg-white container-fluid px-180 py-128" style="position: relative;z-index: 2;">
         <div class="align-items-end justify-content-between row mb-5">
           <div class="col-lg-5">
             <h3>Portfolio</h3>
@@ -278,7 +278,7 @@
       <!-- End: Section 5 - Portfolio -->
 
       <!-- Start: Section 7 - Contact -->
-      <div id="contact" class="bg-dark container-fluid px-180 py-5" style="position: relative;
+      <div id="contact" class="bg-dark container-fluid px-180 py-128" style="position: relative;
       z-index: 2;">
         <div class="row">
           <div class="col-lg-5">
@@ -341,7 +341,7 @@
   <!-- Start: Footer -->
   <footer>
     <div class="container-fluid px-0">
-      <nav class="navbar navbar-dark navbar-expand-lg px-180">
+      <nav class="navbar navbar-dark navbar-expand-lg bg-secondary px-180">
         <ul class="navbar-nav">
           <li class="mr-4 nav-item">
             <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
@@ -367,6 +367,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 
   <script>
+
     //Top Menu Addinh Bg Dark on Load
     $(document).ready(function () {
       if ($(this).scrollTop() > 5) {
@@ -386,10 +387,16 @@
     //Scroll Spy Funtion
     $('body').scrollspy({ target: '#top-menu' })
 
+    //Generate Random Numbers
+    function randomIntFromInterval(min, max) {
+      return Math.floor(Math.random() * (max - min + 1) + min)
+    }
+
     var flag = true;
 
     // Add smooth scrolling on all links inside the navbar
     $("#top-menu a").on('click', function(event) {
+
       if (this.hash !== "") {
         event.preventDefault();
         var hash = this.hash;
@@ -399,25 +406,61 @@
           window.location.hash = hash;
         });
 
+        //Home Menu Click Effects
         if(flag && hash == "#home"){
 
           gsap.fromTo($(hash).find('.col-lg-7'), {duration: 1, x: 100, opacity: 0}, {duration: 1, x: 0, opacity: 1});
           gsap.fromTo($(hash).find('h3'), {duration: 1, x: -100, opacity: 0}, {duration: 1, x: 0, opacity: 1});
           gsap.fromTo($(hash).find('h1'), {duration: 1.5, x: -100, opacity: 0}, {duration: 1.5, x: 0, opacity: 1});
-          gsap.fromTo($(hash).find('p'), {duration: 1.5, x: -200, opacity: 0}, {duration: 1.5, x: 0, opacity: 1});
+          gsap.fromTo($(hash).find('p'), {duration: 1.2, x: -200, opacity: 0}, {duration: 1.5, x: 0, opacity: 1});
           gsap.fromTo($(hash).find('button').first(), {duration: 1, opacity: 0, scale: 0.5}, {duration: 1, opacity: 1,scale: 1});
-          gsap.fromTo($(hash).find('button').last(), {duration: 1, opacity: 0, scale: 0.5}, {duration: 1, opacity: 1,scale: 1});
+          
+          flag = true;
+        }
+
+        //About Menu Click Effects
+        if(flag && hash == "#description"){
+          
+          gsap.fromTo($(hash).find('h3, h1, h4, p'), {duration: 1, y: 300, opacity: 0}, {duration: 1, ease: "circ.inOut", y: 0, opacity: 1});
+          gsap.fromTo($(hash).find('.btn'), {duration: 1, x: -300, opacity: 0}, {duration: 1, x: 0, opacity: 1});
+
+          for (let index = 0; index < 4; index++) {
+            const rndInt = randomIntFromInterval(1, 2)
+            gsap.fromTo($(hash).find('.badge-alt')[index], {duration: rndInt, opacity: 0, scale: 0.5}, {duration: rndInt, opacity: 1, ease: "slow (0.7, 0.7, false)", scale: 1});
+          }
+
+          //Counter Function
+          $('.badge-alt').each(function () {
+            $(this).prop('counter',0).animate({
+                counter: $(this).attr('counter')
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function (now) {
+                  $(this).attr('counter',Math.ceil(now))
+                }
+            });
+          });
+
+          flag = true;
+        }
+
+        if(flag && hash == "#services"){
+          gsap.fromTo($(hash).find('h3'), {duration: 1, x: -100, opacity: 0}, {duration: 0.5, x: 0, opacity: 1});
+          gsap.fromTo($(hash).find('h1'), {duration: 1, y: 100, opacity: 0}, {duration: 0.5, y: 0, opacity: 1});
+
+          var delay = 0;
+          for (let index = 0; index < 4; index++){
+              delay += 0.6;
+              // console.log(delay);
+              gsap.fromTo($(hash).find('.card')[index], {duration: delay, y: 300, ease: "power4.out", opacity:0.1}, {duration: delay, y: 0, ease: "power4.out", opacity:1});
+          }
 
           flag = true;
         }
 
       }
     });
-
-    // $('[data-spy="scroll"]').on('activate.bs.scrollspy', function () {
-    //   // do something…
-    //   console.log("event");
-    // })
 
   </script>
 

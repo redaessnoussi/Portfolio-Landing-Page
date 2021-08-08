@@ -10,9 +10,10 @@
   flex-direction: column;
   justify-content: center;
   &::before {
-    content: '90+';
+    content: attr(counter);
     background-color: $primary;
     color: $white;
+    width: 55px;
     padding: 10px;
     text-align: center;
     border-radius: 50%;
