@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body data-spy="scroll" data-target="#top-menu" data-offset="50">
+<body data-spy="scroll" data-target="#top-menu" data-offset="0">
 
   <header>
     <!-- Start: Navigation Menu -->
@@ -50,7 +50,7 @@
 
     <!-- Start: Section 1 - Description -->
     <div id="home" class="w-100" style="position: absolute; top: 0;">
-      <div class="bg-secondary container-fluid" style="position: fixed;top: 0;">
+      <div class="container-fluid" style="position: fixed;top: 0;background-image: linear-gradient(to right, #000000, #0f0b0e, #161419, #1a232c, #1a232c);">
         <div class="align-items-center vh-100 px-180 row">
           <div class="col-lg-5">
             <h3 class="mb-lg-4 text-white">Frontend Developer</h3>
@@ -60,8 +60,8 @@
               laudantium animi numquam itaque architecto tenetur cum repudiandae? Nostrum!
             </p>
             <div class="d-flex">
-              <button type="button" class="btn btn-info btn-lg mr-lg-4 text-white">BIOGRAPHY</button>
-              <button type="button" class="btn btn-lg btn-primary">Hire Me</button>
+              <button type="button" class="btn btn-info btn-lg mr-lg-4 text-white font-weight-bold">BIOGRAPHY</button>
+              <button type="button" class="btn btn-lg btn-primary font-weight-bold">Hire Me</button>
             </div>
           </div>
           <div class="col-lg-7">
@@ -108,7 +108,7 @@
             <h4 class="text-white">A Lead UX &amp; UI Designer based in Canada, with 8+ Years of Experience</h4>
             <p class="mb-lg-5 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ullam, quidem officiis
               nemo voluptatum dolorum est deleniti consequatur ad totam!</p>
-            <a href="#" class="btn btn-info text-white px-5">Download CV</a>
+            <a href="#" class="btn btn-info btn-lg px-5 text-white font-weight-bold">Download CV</a>
           </div>
         </div>
       </div>
@@ -167,11 +167,11 @@
             <h3 class="mb-lg-4 text-white">Expertise</h3>
             <h1 class="text-primary font-weight-bold">My Skills &amp; Tools</h1>
             <h4 class="text-white">Every Day is a New Challenge</h4>
-            <p class="text-white">
+            <p class="mb-5 text-white">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae nesciunt obcaecati accusamus eos? Sequi,
               amet!
             </p>
-            <button class="btn btn-info text-white px-5">Hire Me</button>
+            <button class="btn btn-info btn-lg px-5 text-white font-weight-bold">Hire Me</button>
           </div>
           <div class="col-lg-6">
             <div class="align-items-center row mb-4">
@@ -283,7 +283,7 @@
         <div class="row">
           <div class="col-lg-5">
             <img src="img/logo.png" class="d-none">
-            <h1 class="font-weight-bold my-4 text-primary">My Skills &amp; Tools</h1>
+            <h1 class="font-weight-bold mt-5 mb-4 text-primary">My Skills &amp; Tools</h1>
             <p class="text-white mb-4">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae nesciunt obcaecati accusamus eos? Sequi,
               amet!
@@ -293,7 +293,7 @@
           </div>
           <div class="col-lg-7">
             <h4 class="text-white">Any Question?</h4>
-            <h1 class="text-primary font-weight-bold">Drop Me A Line</h1>
+            <h1 class="font-weight-bold mb-5 mt-3 text-primary">Drop Me A Line</h1>
             <form id="contact-form" role="form">
               <div class="controls text-white">
                 <div class="row">
@@ -325,7 +325,7 @@
                     </div>
                   </div>
                   <div class="col-lg-12">
-                    <button type="submit" class="btn btn-info text-white px-5">Send Message</button>
+                    <button type="submit" class="btn btn-info text-white px-5 font-weight-bold">Send Message</button>
                   </div>
                 </div>
               </div>
@@ -364,6 +364,8 @@
   </footer>
   <!-- End: Footer -->
   <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+
   <script>
     //Top Menu Addinh Bg Dark on Load
     $(document).ready(function () {
@@ -384,6 +386,8 @@
     //Scroll Spy Funtion
     $('body').scrollspy({ target: '#top-menu' })
 
+    var flag = true;
+
     // Add smooth scrolling on all links inside the navbar
     $("#top-menu a").on('click', function(event) {
       if (this.hash !== "") {
@@ -394,8 +398,26 @@
         }, 800, function(){
           window.location.hash = hash;
         });
+
+        if(flag && hash == "#home"){
+
+          gsap.fromTo($(hash).find('.col-lg-7'), {duration: 1, x: 100, opacity: 0}, {duration: 1, x: 0, opacity: 1});
+          gsap.fromTo($(hash).find('h3'), {duration: 1, x: -100, opacity: 0}, {duration: 1, x: 0, opacity: 1});
+          gsap.fromTo($(hash).find('h1'), {duration: 1.5, x: -100, opacity: 0}, {duration: 1.5, x: 0, opacity: 1});
+          gsap.fromTo($(hash).find('p'), {duration: 1.5, x: -200, opacity: 0}, {duration: 1.5, x: 0, opacity: 1});
+          gsap.fromTo($(hash).find('button').first(), {duration: 1, opacity: 0, scale: 0.5}, {duration: 1, opacity: 1,scale: 1});
+          gsap.fromTo($(hash).find('button').last(), {duration: 1, opacity: 0, scale: 0.5}, {duration: 1, opacity: 1,scale: 1});
+
+          flag = true;
+        }
+
       }
     });
+
+    // $('[data-spy="scroll"]').on('activate.bs.scrollspy', function () {
+    //   // do something…
+    //   console.log("event");
+    // })
 
   </script>
 
