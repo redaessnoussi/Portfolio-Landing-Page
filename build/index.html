@@ -15,7 +15,7 @@
     <!-- Start: Navigation Menu -->
     <nav id="top-menu" class="top-menu navbar navbar-dark navbar-expand-lg fixed-top py-lg-4 px-180">
         <a class="navbar-brand" href="#">
-          <img src="img/logo.png" height="40" alt="logo" class="d-none">
+          <img src="img/logo.png" height="40" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -60,8 +60,8 @@
               laudantium animi numquam itaque architecto tenetur cum repudiandae? Nostrum!
             </p>
             <div class="d-flex">
-              <button type="button" class="btn btn-info btn-lg mr-lg-4 text-white font-weight-bold">BIOGRAPHY</button>
-              <button type="button" class="btn btn-lg btn-primary font-weight-bold">Hire Me</button>
+              <button type="button" class="btn btn-primary btn-lg mr-lg-4 text-white font-weight-bold">BIOGRAPHY</button>
+              <button type="button" class="btn btn-lg btn-info font-weight-bold">Hire Me</button>
             </div>
           </div>
           <div class="col-lg-7">
@@ -82,22 +82,22 @@
             <ul class="d-flex flex-wrap justify-content-around list-unstyled mb-0">
               <li>
                 <div class="badge-alt bg-white rounded-circle text-center" counter="150">
-                  Happy Clients
+                  <span>Happy Clients</span>
                 </div>
               </li>
               <li class="ml-5">
                 <div class="badge-alt bg-white rounded-circle text-center" counter="12">
-                  Projects Done
+                  <span>Projects Done</span>
                 </div>
               </li>
               <li class="ml-5 mt-5">
                 <div class="badge-alt bg-white rounded-circle text-center" counter="3">
-                  Projects In Progresss
+                  <span>Projects In Progresss</span>
                 </div>
               </li>
               <li class="ml-5 mt-5">
                 <div class="badge-alt bg-white rounded-circle text-center" counter="95">
-                  Working Hours
+                  <span>Working Hours</span>
                 </div>
               </li>
             </ul>
@@ -118,13 +118,13 @@
       <div id="services" class="bg-white container-fluid px-180 py-128 text-center" style="position: relative;
       z-index: 2;">
         <h3>My Services</h3>
-        <h1 class="font-weight-bold text-primary mb-100">What Can I Do Best ?</h1>
+        <h1 class="font-weight-bold text-info mb-100">What Can I Do Best ?</h1>
         <div class="row">
           <div class="col-lg-3">
             <div class="card card-icon shadow-sm">
               <div class="card-body text-left">
                 <h4 class="mt-5">Website Design</h4>
-                <hr class="bg-primary">
+                <hr class="bg-info">
                 <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
@@ -133,7 +133,7 @@
             <div class="card card-icon shadow-sm">
               <div class="card-body text-left">
                 <h4 class="mt-5">Brand Identity</h4>
-                <hr class="bg-primary">
+                <hr class="bg-info">
                 <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
@@ -142,7 +142,7 @@
             <div class="card card-icon shadow-sm">
               <div class="card-body text-left">
                 <h4 class="mt-5">Logo Design</h4>
-                <hr class="bg-primary">
+                <hr class="bg-info">
                 <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
@@ -151,7 +151,7 @@
             <div class="card card-icon shadow-sm">
               <div class="card-body text-left">
                 <h4 class="mt-5">Mobile App Design</h4>
-                <hr class="bg-primary">
+                <hr class="bg-info">
                 <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
@@ -162,7 +162,7 @@
 
       <!-- Start: Section 4 - Expertise -->
       <div id="expertise" class="bg-dark container-fluid px-180 py-128" style="position: relative;z-index: 2;">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-lg-6">
             <h3 class="mb-lg-4 text-white">Expertise</h3>
             <h1 class="text-primary font-weight-bold">My Skills &amp; Tools</h1>
@@ -180,7 +180,7 @@
               </div>
               <div class="col">
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" data-name="skill-1" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
             </div>
@@ -191,7 +191,7 @@
               </div>
               <div class="col">
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" data-name="skill-2" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
             </div>
@@ -202,7 +202,7 @@
               </div>
               <div class="col">
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" data-name="skill-3" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
             </div>
@@ -213,7 +213,7 @@
               </div>
               <div class="col">
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" data-name="skill-4" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
             </div>
@@ -224,7 +224,7 @@
               </div>
               <div class="col">
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" data-name="skill-5" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
             </div>
@@ -239,10 +239,10 @@
         <div class="align-items-end justify-content-between row mb-5">
           <div class="col-lg-5">
             <h3>Portfolio</h3>
-            <h1 class="text-primary font-weight-bold mb-0">My Creative Work</h1>
+            <h1 class="text-info font-weight-bold mb-0">My Creative Work</h1>
           </div>
           <div class="col-lg-auto">
-            <nav class="nav nav-pills nav-justified">
+            <nav class="nav nav-pills navs-info nav-justified">
               <a class="nav-link active" href="#">ALL</a>
               <a class="nav-link" href="#">WEB DESIGN</a>
               <a class="nav-link" href="#">LOGO DESIGN</a>
@@ -282,8 +282,8 @@
       z-index: 2;">
         <div class="row">
           <div class="col-lg-5">
-            <img src="img/logo.png" class="d-none">
-            <h1 class="font-weight-bold mt-5 mb-4 text-primary">My Skills &amp; Tools</h1>
+            <img src="img/logo.png">
+            <h1 class="font-weight-bold mt-5 mb-4 text-primary">Frontend <span class="text-white">Developer</span></h1>
             <p class="text-white mb-4">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae nesciunt obcaecati accusamus eos? Sequi,
               amet!
@@ -409,11 +409,11 @@
         //Home Menu Click Effects
         if(flag && hash == "#home"){
 
-          gsap.fromTo($(hash).find('.col-lg-7'), {duration: 1, x: 100, opacity: 0}, {duration: 1, x: 0, opacity: 1});
-          gsap.fromTo($(hash).find('h3'), {duration: 1, x: -100, opacity: 0}, {duration: 1, x: 0, opacity: 1});
-          gsap.fromTo($(hash).find('h1'), {duration: 1.5, x: -100, opacity: 0}, {duration: 1.5, x: 0, opacity: 1});
-          gsap.fromTo($(hash).find('p'), {duration: 1.2, x: -200, opacity: 0}, {duration: 1.5, x: 0, opacity: 1});
-          gsap.fromTo($(hash).find('button').first(), {duration: 1, opacity: 0, scale: 0.5}, {duration: 1, opacity: 1,scale: 1});
+          gsap.fromTo($(hash).find('img'), {duration: 0.5, x: 100, opacity: 0}, {duration: 0.5, x: 0, opacity: 1, delay: 0.5});
+          gsap.fromTo($(hash).find('h3'), {duration: 0.5, x: -100, opacity: 0}, {duration: 0.5, x: 0, opacity: 1, delay: 1});
+          gsap.fromTo($(hash).find('h1'), {duration: 0.5, x: -100, opacity: 0}, {duration: 0.5, x: 0, opacity: 1, delay: 1.3});
+          gsap.fromTo($(hash).find('p'), {duration: 0.5, x: -200, opacity: 0}, {duration: 0.5, x: 0, opacity: 1, delay: 1.5});
+          gsap.fromTo($(hash).find('button'), {duration: 0.5, opacity: 0, scale: 0.5, stagger: 0.5}, {duration: 0.5, opacity: 1,scale: 1, delay: 1.8, stagger: 0.5});
           
           flag = true;
         }
@@ -421,20 +421,16 @@
         //About Menu Click Effects
         if(flag && hash == "#description"){
           
-          gsap.fromTo($(hash).find('h3, h1, h4, p'), {duration: 1, y: 300, opacity: 0}, {duration: 1, ease: "circ.inOut", y: 0, opacity: 1});
-          gsap.fromTo($(hash).find('.btn'), {duration: 1, x: -300, opacity: 0}, {duration: 1, x: 0, opacity: 1});
-
-          for (let index = 0; index < 4; index++) {
-            const rndInt = randomIntFromInterval(1, 2)
-            gsap.fromTo($(hash).find('.badge-alt')[index], {duration: rndInt, opacity: 0, scale: 0.5}, {duration: rndInt, opacity: 1, ease: "slow (0.7, 0.7, false)", scale: 1});
-          }
+          gsap.fromTo($(hash).find('h3, h1, h4, p'), {duration: 1, y: 300, opacity: 0}, {duration: 1, ease: "circ.inOut", y: 0, opacity: 1, delay: 0.5});
+          gsap.fromTo($(hash).find('.btn'), {duration: 1, x: -300, opacity: 0}, {duration: 1, x: 0, opacity: 1, delay: 1});
+          gsap.fromTo($(hash).find('.badge-alt'), {duration: 1, opacity: 0, scale: 0.5, stagger: 0.5}, {duration: 1, opacity: 1, ease: "slow (0.7, 0.7, false)", scale: 1, stagger: 0.5});
 
           //Counter Function
           $('.badge-alt').each(function () {
             $(this).prop('counter',0).animate({
                 counter: $(this).attr('counter')
             }, {
-                duration: 4000,
+                duration: 5000,
                 easing: 'swing',
                 step: function (now) {
                   $(this).attr('counter',Math.ceil(now))
@@ -448,13 +444,45 @@
         if(flag && hash == "#services"){
           gsap.fromTo($(hash).find('h3'), {duration: 1, x: -100, opacity: 0}, {duration: 0.5, x: 0, opacity: 1});
           gsap.fromTo($(hash).find('h1'), {duration: 1, y: 100, opacity: 0}, {duration: 0.5, y: 0, opacity: 1});
+          gsap.fromTo($(hash).find('.card'), {duration: 1, y: 300, ease: "power4.out", opacity: 0, stagger: 0.5}, {duration: 1, y: 0, ease: "power4.out", opacity: 1, stagger: 0.5});
 
-          var delay = 0;
-          for (let index = 0; index < 4; index++){
-              delay += 0.6;
-              // console.log(delay);
-              gsap.fromTo($(hash).find('.card')[index], {duration: delay, y: 300, ease: "power4.out", opacity:0.1}, {duration: delay, y: 0, ease: "power4.out", opacity:1});
-          }
+        }
+
+        //Skills Menu Click Effects
+        if(flag && hash == "#expertise"){
+          gsap.fromTo($(hash).find('h3'), {duration: 1, y: 100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 1.2});
+          gsap.fromTo($(hash).find('h1'), {duration: 1, x: -100, opacity: 0}, {duration: 1, x: 0, opacity: 1, delay: 1.2});
+          gsap.fromTo($(hash).find('h4'), {duration: 1, x: -100, opacity: 0}, {duration: 1, x: 0, opacity: 1, delay: 1.2});
+          gsap.fromTo($(hash).find('p'), {duration: 1, x: -100, opacity: 0}, {duration: 1, x: 0, opacity: 1, delay: 1.2});
+          gsap.fromTo($(hash).find('button'), {duration: 1, y: -100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 1.2});
+
+          gsap.fromTo($(hash).find('h5'), {duration: 1, y: -100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 1.2, stagger: 0.5});
+          gsap.fromTo($(hash).find('.progress'), {duration: 1, y: -100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 0.5, stagger: 0.5});
+          gsap.fromTo($(hash).find('[data-name="skill-1"]'), {duration: 1, width: 0}, {duration: 1, width: '90%', ease: "bounce.out", delay: 2});
+          gsap.fromTo($(hash).find('[data-name="skill-2"]'), {duration: 1, width: 0}, {duration: 1, width: '75%', ease: "bounce.out", delay: 2});
+          gsap.fromTo($(hash).find('[data-name="skill-3"]'), {duration: 1, width: 0}, {duration: 1, width: '100%', ease: "bounce.out", delay: 2});
+          gsap.fromTo($(hash).find('[data-name="skill-4"]'), {duration: 1, width: 0}, {duration: 1, width: '60%', ease: "bounce.out", delay: 2});
+          gsap.fromTo($(hash).find('[data-name="skill-5"]'), {duration: 1, width: 0}, {duration: 1, width: '85%', ease: "bounce.out", delay: 2});
+
+          flag = true;
+        }
+
+        //Works Menu Click Effects
+        if(flag && hash == "#portfolio"){
+          gsap.fromTo($(hash).find('h3'), {duration: 1, x: -100, opacity: 0}, {duration: 1, x: 0, opacity: 1, delay: 0});
+          gsap.fromTo($(hash).find('h1'), {duration: 1, x: -100, opacity: 0}, {duration: 1, x: 0, opacity: 1, delay: 0.5});
+          gsap.fromTo($(hash).find('.nav-link'), {duration: 1, x: 100, opacity: 0}, {duration: 1, x: 0, opacity: 1, delay: 0.8, stagger: 0.3});
+          gsap.fromTo($(hash).find('.card'), {duration: 1, y: 100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 0.9, stagger: 0.3});
+          
+          flag = true;
+        }
+
+        //Works Menu Click Effects
+        if(flag && hash == "#contact"){
+          gsap.fromTo($(hash).find('.col-lg-5 img'), {duration: 1, scale: 0}, {duration: 1, scale: 1, delay: 0});
+          gsap.fromTo($(hash).find('.col-lg-5 h1'), {duration: 1, y: 100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 1});
+          gsap.fromTo($(hash).find('.col-lg-5 p'), {duration: 1, y: 100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 1});
+          gsap.fromTo($(hash).find('.col-lg-7'), {duration: 1, opacity: 0}, {duration: 1.5, opacity: 1, delay: 1});
 
           flag = true;
         }

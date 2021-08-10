@@ -53,3 +53,20 @@
     }
   }
 }
+
+.navs-info{
+  .active{
+    background-color: $info!important;
+  }
+  .nav-link:not(.active){
+    color: $info!important;
+  }
+}
+
+.navbar-dark{
+  li{
+    a{
+      font-weight: bold!important;
+    }
+  }
+}
