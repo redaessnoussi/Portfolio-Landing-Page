@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/main.css">
+  <!-- Line Awesome -->
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
 
 <body data-spy="scroll" data-target="#top-menu" data-offset="0">
@@ -122,37 +124,43 @@
         <div class="row">
           <div class="col-lg-3">
             <div class="card card-icon shadow-sm">
+              <i class="lab la-adobe icon"></i>
               <div class="card-body text-left">
-                <h4 class="mt-5">Website Design</h4>
+                <h4 class="mt-5">UI/UX Design</h4>
                 <hr class="bg-info">
-                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="mb-0">I've created a user interface and user experience with some process and method</p>
               </div>
             </div>
           </div>
           <div class="col-lg-3">
             <div class="card card-icon shadow-sm">
+              <i class="las la-laptop-code icon"></i>
               <div class="card-body text-left">
-                <h4 class="mt-5">Brand Identity</h4>
+                <h4 class="mt-5">
+                  Web Development
+                </h4>
                 <hr class="bg-info">
-                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="mb-0">Building a full stack structure for our working workflow process</p>
               </div>
             </div>
           </div>
           <div class="col-lg-3">
             <div class="card card-icon shadow-sm">
+              <i class="las la-fill-drip icon"></i>
               <div class="card-body text-left">
-                <h4 class="mt-5">Logo Design</h4>
+                <h4 class="mt-5">Visual Branding</h4>
                 <hr class="bg-info">
-                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="mb-0">Making an unique identity for marketing and promoting company goals</p>
               </div>
             </div>
           </div>
           <div class="col-lg-3">
             <div class="card card-icon shadow-sm">
+              <i class="las la-mobile icon"></i>
               <div class="card-body text-left">
-                <h4 class="mt-5">Mobile App Design</h4>
+                <h4 class="mt-5">App Development</h4>
                 <hr class="bg-info">
-                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="mb-0">Building some of responsive mobile for our working workflow process</p>
               </div>
             </div>
           </div>
@@ -242,38 +250,105 @@
             <h1 class="text-info font-weight-bold mb-0">My Creative Work</h1>
           </div>
           <div class="col-lg-auto">
-            <nav class="nav nav-pills navs-info nav-justified">
-              <a class="nav-link active" href="#">ALL</a>
-              <a class="nav-link" href="#">WEB DESIGN</a>
-              <a class="nav-link" href="#">LOGO DESIGN</a>
-              <a class="nav-link" href="#">BRANDING</a>
-              <a class="nav-link" href="#">APPS DESIGN</a>
-            </nav>
+            <ul class="nav nav-pills navs-info" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">ALL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#pills-landings" role="tab" aria-controls="pills-landings" aria-selected="false">LANDING PAGES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#pills-apps" role="tab" aria-controls="pills-apps" aria-selected="false">MOBILE APPS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#pills-webs" role="tab" aria-controls="pills-webs" aria-selected="false">WEB APPS</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="card shadow-sm border-0">
-              <div class="card-body">
-                <p>Projects</p>
+
+        <div class="tab-content" id="pills-works">
+          <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card shadow-sm border-0">
+                  <div class="card-body">
+                    <p>Projects</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card shadow-sm border-0">
+                  <div class="card-body">
+                    <p>Projects</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card shadow-sm border-0">
+                  <div class="card-body">
+                    <p>Projects</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="card shadow-sm border-0">
-              <div class="card-body">
-                <p>Projects</p>
+          <div class="tab-pane fade" id="pills-landings" role="tabpanel" aria-labelledby="pills-landings">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card shadow-sm border-0">
+                  <div class="card-body">
+                    <p>Projects</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card shadow-sm border-0">
+                  <div class="card-body">
+                    <p>Projects</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="card shadow-sm border-0">
-              <div class="card-body">
-                <p>Projects</p>
+          <div class="tab-pane fade" id="pills-apps" role="tabpanel" aria-labelledby="pills-apps">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card shadow-sm border-0">
+                  <div class="card-body">
+                    <p>Projects</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-webs" role="tabpanel" aria-labelledby="pills-webs">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card shadow-sm border-0">
+                  <div class="card-body">
+                    <p>Projects</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card shadow-sm border-0">
+                  <div class="card-body">
+                    <p>Projects</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card shadow-sm border-0">
+                  <div class="card-body">
+                    <p>Projects</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
       <!-- End: Section 5 - Portfolio -->
 
@@ -450,13 +525,13 @@
 
         //Skills Menu Click Effects
         if(flag && hash == "#expertise"){
-          gsap.fromTo($(hash).find('h3'), {duration: 1, y: 100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 1.2});
-          gsap.fromTo($(hash).find('h1'), {duration: 1, x: -100, opacity: 0}, {duration: 1, x: 0, opacity: 1, delay: 1.2});
-          gsap.fromTo($(hash).find('h4'), {duration: 1, x: -100, opacity: 0}, {duration: 1, x: 0, opacity: 1, delay: 1.2});
-          gsap.fromTo($(hash).find('p'), {duration: 1, x: -100, opacity: 0}, {duration: 1, x: 0, opacity: 1, delay: 1.2});
-          gsap.fromTo($(hash).find('button'), {duration: 1, y: -100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 1.2});
+          gsap.fromTo($(hash).find('h3'), {duration: 1, y: 100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 0.2});
+          gsap.fromTo($(hash).find('h1'), {duration: 1, y: 100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 0.4});
+          gsap.fromTo($(hash).find('h4'), {duration: 1, y: 100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 0.6});
+          gsap.fromTo($(hash).find('p'), {duration: 1, y: 100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 0.8});
+          gsap.fromTo($(hash).find('button'), {duration: 1, y: 100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 1});
 
-          gsap.fromTo($(hash).find('h5'), {duration: 1, y: -100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 1.2, stagger: 0.5});
+          gsap.fromTo($(hash).find('h5'), {duration: 1, y: -100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 1.5, stagger: 0.2});
           gsap.fromTo($(hash).find('.progress'), {duration: 1, y: -100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 0.5, stagger: 0.5});
           gsap.fromTo($(hash).find('[data-name="skill-1"]'), {duration: 1, width: 0}, {duration: 1, width: '90%', ease: "bounce.out", delay: 2});
           gsap.fromTo($(hash).find('[data-name="skill-2"]'), {duration: 1, width: 0}, {duration: 1, width: '75%', ease: "bounce.out", delay: 2});
