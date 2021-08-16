@@ -271,23 +271,29 @@
           <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all">
             <div class="row">
               <div class="col-lg-4">
-                <div class="card shadow-sm border-0">
-                  <div class="card-body">
-                    <p>Projects</p>
+                <div class="shadow img-project">
+                  <img src="img/project-1.jpg" class="img-fluid" alt="project 1">
+                  <div class="img-caption p-3 text-white text-center">
+                    <h3>Landing Page</h3>
+                    <h4>Bootstrap, jQruery, Sass</h4>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4">
-                <div class="card shadow-sm border-0">
-                  <div class="card-body">
-                    <p>Projects</p>
+                <div class="shadow img-project">
+                  <img src="img/project-1.jpg" class="img-fluid" alt="project 1">
+                  <div class="img-caption p-3 text-white text-center">
+                    <h3>Landing Page</h3>
+                    <h4>Bootstrap, jQruery, Sass</h4>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4">
-                <div class="card shadow-sm border-0">
-                  <div class="card-body">
-                    <p>Projects</p>
+                <div class="shadow img-project">
+                  <img src="img/project-1.jpg" class="img-fluid" alt="project 1">
+                  <div class="img-caption p-3 text-white text-center">
+                    <h3>Landing Page</h3>
+                    <h4>Bootstrap, jQruery, Sass</h4>
                   </div>
                 </div>
               </div>
@@ -547,7 +553,7 @@
           gsap.fromTo($(hash).find('h3'), {duration: 1, x: -100, opacity: 0}, {duration: 1, x: 0, opacity: 1, delay: 0});
           gsap.fromTo($(hash).find('h1'), {duration: 1, x: -100, opacity: 0}, {duration: 1, x: 0, opacity: 1, delay: 0.5});
           gsap.fromTo($(hash).find('.nav-link'), {duration: 1, x: 100, opacity: 0}, {duration: 1, x: 0, opacity: 1, delay: 0.8, stagger: 0.3});
-          gsap.fromTo($(hash).find('.card'), {duration: 1, y: 100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 0.9, stagger: 0.3});
+          gsap.fromTo($(hash).find('.img-project'), {duration: 1, y: 100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 0.9, stagger: 0.3});
           
           flag = true;
         }
@@ -561,9 +567,17 @@
 
           flag = true;
         }
-
       }
     });
+
+    $('.img-project').hover(function () {
+        // over
+        $(this).find('.img-caption').css('transform','scale(1)')
+      }, function () {
+        // out
+        $(this).find('.img-caption').css('transform','scale(0)')
+      }
+    );
 
   </script>
 
