@@ -15,7 +15,7 @@
 
   <header>
     <!-- Start: Navigation Menu -->
-    <nav id="top-menu" class="top-menu navbar navbar-dark navbar-expand-lg fixed-top py-lg-4 px-180">
+    <nav id="top-menu" class="top-menu navbar navbar-dark navbar-expand-md fixed-top py-lg-4 px-180 bg-dark">
         <a class="navbar-brand" href="#">
           <img src="img/logo.png" height="40" alt="logo">
         </a>
@@ -24,20 +24,20 @@
         </button>
         <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
           <ul class="navbar-nav navbar-top">
-            <li class="mr-lg-5 nav-item">
+            <li class="mr-lg-5 mr-md-3 nav-item">
               <a class="nav-link" href="#home">HOME<span class="sr-only">(current)</span></a>
             </li>
-            <li class="mr-lg-5 nav-item">
+            <li class="mr-lg-5 mr-md-3 nav-item">
               <a class="nav-link" href="#description">ABOUT</a>
             </li>
-            <li class="mr-lg-5 nav-item">
+            <li class="mr-lg-5 mr-md-3 nav-item">
               <a class="nav-link" href="#services">SERVICES</a>
             </li>
-            <li class="mr-lg-5 nav-item">
+            <li class="mr-lg-5 mr-md-3 nav-item">
               <a class="nav-link" href="#expertise">SKILLS</a>
             </li>
-            <li class="mr-lg-5 nav-item">
-              <a class="nav-link" href="#portfolio">WORKS</a>
+            <li class="mr-lg-5 mr-md-3 nav-item">
+              <a class="nav-link active" href="#portfolio">WORKS</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">CONTACT</a>
@@ -52,22 +52,22 @@
 
     <!-- Start: Section 1 - Description -->
     <div id="home" class="w-100" style="position: absolute; top: 0;">
-      <div class="container-fluid" style="position: fixed;top: 0;background-image: linear-gradient(to right, #000000, #0f0b0e, #161419, #1a232c, #1a232c);">
-        <div class="align-items-center vh-100 px-180 row">
-          <div class="col-lg-5">
-            <h3 class="mb-lg-4 text-white">Frontend Developer</h3>
+      <div class="container-fluid mx-md-4" style="position: fixed;top: 0;background-image: linear-gradient(to right, #000000, #0f0b0e, #161419, #1a232c, #1a232c);">
+        <div class="align-items-center flex-xs-column justify-content-xs-end px-180 row vh-100">
+          <div class="col-lg-5 col-md-6">
+            <h3 class="mb-4 text-white">Frontend Developer</h3>
             <h1 class="text-primary display-3 font-weight-bold">Alex <span class="text-white">Steel</span></h1>
-            <p class="mb-lg-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo ex
+            <p class="mb-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo ex
               provident
               laudantium animi numquam itaque architecto tenetur cum repudiandae? Nostrum!
             </p>
             <div class="d-flex">
-              <button type="button" class="btn btn-primary btn-lg mr-lg-4 text-white font-weight-bold">BIOGRAPHY</button>
-              <button type="button" class="btn btn-lg btn-info font-weight-bold">Hire Me</button>
+              <button type="button" class="btn btn-lg btn-xs btn-primary font-weight-bold mr-4 px-md-4 text-white">BIOGRAPHY</button>
+              <button type="button" class="btn btn-info btn-lg btn-xs font-weight-bold px-md-4">Hire Me</button>
             </div>
           </div>
-          <div class="col-lg-7">
-            <img src="img/img02.png" alt="personal image" class="img-fluid" width="1000">
+          <div class="col-lg-7 col-md-6 position-static">
+            <img src="img/img02.png" alt="personal image" class="img-fluid img-home-md" width="1000">
           </div>
         </div>
       </div>
@@ -80,7 +80,7 @@
       <!-- Start: Section 2 - About Me -->
       <div id="description" class="bg-dark container-fluid px-180 py-128">
         <div class="row align-items-center justify-content-between">
-          <div class="col-lg-5">
+          <div class="col-md-6 col-lg-5 mb-xs-5">
             <ul class="d-flex flex-wrap justify-content-around list-unstyled mb-0">
               <li>
                 <div class="badge-alt bg-white rounded-circle text-center" counter="150">
@@ -92,7 +92,7 @@
                   <span>Projects Done</span>
                 </div>
               </li>
-              <li class="ml-5 mt-5">
+              <li class="ml-lg-5 mt-5">
                 <div class="badge-alt bg-white rounded-circle text-center" counter="3">
                   <span>Projects In Progresss</span>
                 </div>
@@ -104,11 +104,11 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-6">
-            <h3 class="mb-lg-4 text-white">About Me</h3>
+          <div class="col-md-6 col-lg-6">
+            <h3 class="mb-4 text-white">About Me</h3>
             <h1 class="text-primary font-weight-bold">Unleash Your Creativity</h1>
             <h4 class="text-white">A Lead UX &amp; UI Designer based in Canada, with 8+ Years of Experience</h4>
-            <p class="mb-lg-5 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ullam, quidem officiis
+            <p class="mb-5 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ullam, quidem officiis
               nemo voluptatum dolorum est deleniti consequatur ad totam!</p>
             <a href="#" class="btn btn-info btn-lg px-5 text-white font-weight-bold">Download CV</a>
           </div>
@@ -122,8 +122,8 @@
         <h3>My Services</h3>
         <h1 class="font-weight-bold text-info mb-100">What Can I Do Best ?</h1>
         <div class="row">
-          <div class="col-lg-3">
-            <div class="card card-icon shadow-sm">
+          <div class="col-lg-3 col-md-6 mb-65 mb-lg-0">
+            <div class="card card-icon shadow-sm h-100">
               <i class="lab la-adobe icon"></i>
               <div class="card-body text-left">
                 <h4 class="mt-5">UI/UX Design</h4>
@@ -132,8 +132,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="card card-icon shadow-sm">
+          <div class="col-lg-3 col-md-6 mb-65 mb-lg-0">
+            <div class="card card-icon shadow-sm h-100">
               <i class="las la-laptop-code icon"></i>
               <div class="card-body text-left">
                 <h4 class="mt-5">
@@ -144,8 +144,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="card card-icon shadow-sm">
+          <div class="col-lg-3 col-md-6 mb-65 mb-md-0">
+            <div class="card card-icon shadow-sm h-100">
               <i class="las la-fill-drip icon"></i>
               <div class="card-body text-left">
                 <h4 class="mt-5">Visual Branding</h4>
@@ -154,8 +154,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="card card-icon shadow-sm">
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-icon shadow-sm h-100">
               <i class="las la-mobile icon"></i>
               <div class="card-body text-left">
                 <h4 class="mt-5">App Development</h4>
@@ -171,8 +171,8 @@
       <!-- Start: Section 4 - Expertise -->
       <div id="expertise" class="bg-dark container-fluid px-180 py-128" style="position: relative;z-index: 2;">
         <div class="row align-items-center">
-          <div class="col-lg-6">
-            <h3 class="mb-lg-4 text-white">Expertise</h3>
+          <div class="col-lg-5 col-md-6 mb-xs-5">
+            <h3 class="mb-4 text-white">Expertise</h3>
             <h1 class="text-primary font-weight-bold">My Skills &amp; Tools</h1>
             <h4 class="text-white">Every Day is a New Challenge</h4>
             <p class="mb-5 text-white">
@@ -181,10 +181,10 @@
             </p>
             <button class="btn btn-info btn-lg px-5 text-white font-weight-bold">Hire Me</button>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-7 col-md-6">
             <div class="align-items-center row mb-4">
-              <div class="col-4">
-                <h5 class="mb-0 text-white">HTML/HTML5</h5>
+              <div class="col-lg-4 col-md-6">
+                <h5 class="mb-0 mb-xs-2 text-white">HTML/HTML5</h5>
               </div>
               <div class="col">
                 <div class="progress">
@@ -194,8 +194,8 @@
             </div>
 
             <div class="align-items-center row mb-4">
-              <div class="col-4">
-                <h5 class="mb-0 text-white">JS/jQuery</h5>
+              <div class="col-lg-4 col-md-6">
+                <h5 class="mb-0 mb-xs-2 text-white">JS/jQuery</h5>
               </div>
               <div class="col">
                 <div class="progress">
@@ -205,8 +205,8 @@
             </div>
 
             <div class="align-items-center row mb-4">
-              <div class="col-4">
-                <h5 class="mb-0 text-white">CSS/Sass/Bootstrap</h5>
+              <div class="col-lg-4 col-md-6">
+                <h5 class="mb-0 mb-xs-2 text-white">CSS/Sass/Bootstrap</h5>
               </div>
               <div class="col">
                 <div class="progress">
@@ -216,8 +216,8 @@
             </div>
 
             <div class="align-items-center row mb-4">
-              <div class="col-4">
-                <h5 class="mb-0 text-white">ReactJS</h5>
+              <div class="col-lg-4 col-md-6">
+                <h5 class="mb-0 mb-xs-2 text-white">ReactJS</h5>
               </div>
               <div class="col">
                 <div class="progress">
@@ -227,8 +227,8 @@
             </div>
 
             <div class="align-items-center row">
-              <div class="col-4">
-                <h5 class="mb-0 text-white">Git/GitHub</h5>
+              <div class="col-lg-4 col-md-6">
+                <h5 class="mb-0 mb-xs-2 text-white">Git/GitHub</h5>
               </div>
               <div class="col">
                 <div class="progress">
@@ -244,116 +244,118 @@
 
       <!-- Start: Section 5 - Portfolio -->
       <div id="portfolio" class="bg-white container-fluid px-180 py-128" style="position: relative;z-index: 2;">
-        <div class="align-items-end justify-content-between row mb-5">
-          <div class="col-lg-5">
+        <div class="align-items-center justify-content-between row mb-5">
+          <div class="col-lg-5 mb-4">
             <h3>Portfolio</h3>
             <h1 class="text-info font-weight-bold mb-0">My Creative Work</h1>
           </div>
           <div class="col-lg-auto">
             <ul class="nav nav-pills navs-info" id="pills-tab" role="tablist">
               <li class="nav-item">
-                <a class="nav-link active" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">ALL</a>
+                <a class="active h6 nav-link" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">ALL</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="pill" href="#pills-landings" role="tab" aria-controls="pills-landings" aria-selected="false">LANDING PAGES</a>
+                <a class="h6 nav-link" data-toggle="pill" href="#pills-landings" role="tab" aria-controls="pills-landings" aria-selected="false">LANDING PAGES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="pill" href="#pills-apps" role="tab" aria-controls="pills-apps" aria-selected="false">MOBILE APPS</a>
+                <a class="h6 nav-link" data-toggle="pill" href="#pills-apps" role="tab" aria-controls="pills-apps" aria-selected="false">MOBILE APPS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="pill" href="#pills-webs" role="tab" aria-controls="pills-webs" aria-selected="false">WEB APPS</a>
+                <a class="h6 nav-link" data-toggle="pill" href="#pills-webs" role="tab" aria-controls="pills-webs" aria-selected="false">WEB APPS</a>
               </li>
             </ul>
           </div>
         </div>
-
+        <!-- Start: Porjects Section (Navs) -->
         <div class="tab-content" id="pills-works">
           <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all">
             <div class="row">
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-6 mb-4">
                 <div class="shadow img-project">
                   <img src="img/project-1.jpg" class="img-fluid" alt="project 1">
-                  <div class="img-caption p-3 text-white text-center">
-                    <h3>Landing Page</h3>
-                    <h4>Bootstrap, jQruery, Sass</h4>
+                  <div class="img-caption p-3 text-white text-center" style="transform: scale(0);">
+                    <h3>Project 1</h3>
+                    <h4>Bootstrap, jQruery &amp; Sass</h4>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-6 mb-4">
                 <div class="shadow img-project">
-                  <img src="img/project-1.jpg" class="img-fluid" alt="project 1">
-                  <div class="img-caption p-3 text-white text-center">
-                    <h3>Landing Page</h3>
-                    <h4>Bootstrap, jQruery, Sass</h4>
+                  <img src="img/project-2.jpg" class="img-fluid" alt="project 2">
+                  <div class="img-caption p-3 text-white text-center" style="transform: scale(0);">
+                    <h3>Project 2</h3>
+                    <h4>Elementor &amp; WP Bakery</h4>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-md-6 mb-4">
                 <div class="shadow img-project">
-                  <img src="img/project-1.jpg" class="img-fluid" alt="project 1">
+                  <img src="img/project-3.jpg" class="img-fluid" alt="project 3">
+                  <div class="img-caption p-3 text-white text-center" style="transform: scale(0);">
+                    <h3>Project 3</h3>
+                    <h4>Wordpress</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="shadow img-project">
+                  <img src="img/project-4.jpg" class="img-fluid" alt="project 4">
                   <div class="img-caption p-3 text-white text-center">
-                    <h3>Landing Page</h3>
-                    <h4>Bootstrap, jQruery, Sass</h4>
+                    <h3>Project 4</h3>
+                    <h4>Wordpress &amp; Woocommerce</h4>
+                  </div>
+                </div>
+              </div><div class="col-lg-4 col-md-6 mb-4">
+                <div class="shadow img-project">
+                  <img src="img/project-5.jpg" class="img-fluid" alt="project 5">
+                  <div class="img-caption p-3 text-white text-center">
+                    <h3>Project 5</h3>
+                    <h4>Wordpress, WPBakery &amp; Woocommerce</h4>
+                  </div>
+                </div>
+              </div><div class="col-lg-4 col-md-6 mb-4">
+                <div class="shadow img-project">
+                  <img src="img/project-6.jpg" class="img-fluid" alt="project 6">
+                  <div class="img-caption p-3 text-white text-center" style="transform: scale(0);">
+                    <h3>Project 6</h3>
+                    <h4>Wordpress, Elementor &amp; WPBakery</h4>
+                  </div>
+                </div>
+              </div><div class="col-lg-4 col-md-6 mb-4">
+                <div class="shadow img-project">
+                  <img src="img/project-7.jpg" class="img-fluid" alt="project 7">
+                  <div class="img-caption p-3 text-white text-center">
+                    <h3>Project 7</h3>
+                    <h4>Wordpress</h4>
+                  </div>
+                </div>
+              </div><div class="col-lg-4 col-md-6 mb-4">
+                <div class="shadow img-project">
+                  <img src="img/project-8.jpg" class="img-fluid" alt="project 8">
+                  <div class="img-caption p-3 text-white text-center" style="transform: scale(0);">
+                    <h3>Project 8</h3>
+                    <h4>Wordpress</h4>
+                  </div>
+                </div>
+              </div><div class="col-lg-4 col-md-6">
+                <div class="shadow img-project">
+                  <img src="img/project-9.jpg" class="img-fluid" alt="project 9">
+                  <div class="img-caption p-3 text-white text-center" style="transform: scale(0);">
+                    <h3>Project 9</h3>
+                    <h4>Elementor</h4>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="pills-landings" role="tabpanel" aria-labelledby="pills-landings">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="card shadow-sm border-0">
-                  <div class="card-body">
-                    <p>Projects</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="card shadow-sm border-0">
-                  <div class="card-body">
-                    <p>Projects</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="pills-apps" role="tabpanel" aria-labelledby="pills-apps">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="card shadow-sm border-0">
-                  <div class="card-body">
-                    <p>Projects</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="pills-webs" role="tabpanel" aria-labelledby="pills-webs">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="card shadow-sm border-0">
-                  <div class="card-body">
-                    <p>Projects</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="card shadow-sm border-0">
-                  <div class="card-body">
-                    <p>Projects</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="card shadow-sm border-0">
-                  <div class="card-body">
-                    <p>Projects</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+          <div class="tab-pane fade" id="pills-landings" role="tabpanel" aria-labelledby="pills-landings"></div>
+          
+          <div class="tab-pane fade" id="pills-apps" role="tabpanel" aria-labelledby="pills-apps"></div>
+
+          <div class="tab-pane fade" id="pills-webs" role="tabpanel" aria-labelledby="pills-webs"></div>
         </div>
+        <!-- End: Porjects Section (Navs) -->
 
       </div>
       <!-- End: Section 5 - Portfolio -->
@@ -362,8 +364,8 @@
       <div id="contact" class="bg-dark container-fluid px-180 py-128" style="position: relative;
       z-index: 2;">
         <div class="row">
-          <div class="col-lg-5">
-            <img src="img/logo.png">
+          <div class="col-lg-5 col-md-6 mb-xs-5">
+            <img src="img/logo.png" class="img-fluid" width="250">
             <h1 class="font-weight-bold mt-5 mb-4 text-primary">Frontend <span class="text-white">Developer</span></h1>
             <p class="text-white mb-4">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae nesciunt obcaecati accusamus eos? Sequi,
@@ -372,7 +374,7 @@
             <p class="text-white"><strong class="fwMedium">© <a href="=&quot;javascript:void(0);&quot;">SmithJohnson</a>
                 2020 | All Rights Reserved</strong></p>
           </div>
-          <div class="col-lg-7">
+          <div class="col-lg-7 col-md-6">
             <h4 class="text-white">Any Question?</h4>
             <h1 class="font-weight-bold mb-5 mt-3 text-primary">Drop Me A Line</h1>
             <form id="contact-form" role="form">
@@ -422,7 +424,7 @@
   <!-- Start: Footer -->
   <footer>
     <div class="container-fluid px-0">
-      <nav class="navbar navbar-dark navbar-expand-lg bg-secondary px-180">
+      <nav class="bg-secondary navbar navbar-dark navbar-expand-sm px-180">
         <ul class="navbar-nav">
           <li class="mr-4 nav-item">
             <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>

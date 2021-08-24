@@ -9593,16 +9593,42 @@ a.text-dark:hover, a.text-dark:focus {
   width: 20px;
 }
 
+@media (max-width: 425px) {
+  .navbar-top .nav-item {
+    margin-bottom: 10px;
+  }
+}
+
 .navs-info .active {
   background-color: #17a2b8 !important;
+  margin-right: 8px !important;
 }
 
 .navs-info .nav-link:not(.active) {
-  color: #17a2b8 !important;
+  color: #fff !important;
+  background-color: #000 !important;
+  margin-right: 8px !important;
 }
 
 .navbar-dark li a {
   font-weight: bold !important;
+}
+
+.navbar-expand-xs {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+  -ms-flex-flow: row nowrap !important;
+  flex-flow: row nowrap !important;
+  -webkit-box-pack: start !important;
+  -ms-flex-pack: start !important;
+  justify-content: flex-start !important;
+}
+
+.navbar-expand-xs .navbar-nav {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+  -ms-flex-direction: row !important;
+  flex-direction: row !important;
 }
 
 .vh-100 {
@@ -9613,9 +9639,11 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 100px;
 }
 
-.px-180 {
-  padding-left: 180px;
-  padding-right: 180px;
+@media (min-width: 1440px) {
+  .px-180 {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
 
 .py-128 {
@@ -9625,6 +9653,36 @@ a.text-dark:hover, a.text-dark:focus {
 
 .text-large {
   font-size: 24px;
+}
+
+@media (max-width: 425px) {
+  .mb-xs-2 {
+    margin-bottom: 8px !important;
+  }
+  .mb-xs-5 {
+    margin-bottom: 48px !important;
+  }
+  .justify-content-xs-end {
+    -webkit-box-pack: end !important;
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+  }
+  .flex-xs-column {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+  }
+  .btn-xs {
+    padding: 0.5rem 20px !important;
+    font-size: 1.05rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .mb-65 {
+    margin-bottom: 65px;
+  }
 }
 
 .badge-alt {
@@ -9737,4 +9795,16 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #17a2b8;
   z-index: -1;
   opacity: 0.8;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .img-home-md {
+    z-index: 1;
+    max-width: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -180px;
+    margin-right: 0;
+  }
 }

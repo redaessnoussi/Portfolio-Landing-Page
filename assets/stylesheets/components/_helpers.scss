@@ -6,9 +6,11 @@
   margin-bottom: 100px;
 }
 
-.px-180{
-  padding-left: 180px;
-  padding-right: 180px;
+@media (min-width: 1440px) {
+  .px-180{
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
 
 .py-128{
@@ -18,4 +20,33 @@
 
 .text-large{
   font-size: 24px;
+}
+
+@media (max-width: 425px){
+  .mb-xs-2{
+    margin-bottom: 8px !important;
+  }
+
+  .mb-xs-5{
+    margin-bottom: 48px !important;
+  }
+
+  .justify-content-xs-end {
+    justify-content: flex-end !important;
+  }
+  
+  .flex-xs-column {
+    flex-direction: column !important;
+  }
+
+  .btn-xs{
+    padding: 0.5rem 20px !important;
+    font-size: 1.05rem !important;
+  }
+}
+
+@media (max-width: 768px){
+  .mb-65{
+    margin-bottom: 65px;
+  }
 }

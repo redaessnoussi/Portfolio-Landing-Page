@@ -1,17 +1,20 @@
-.navbar-top{
-  li{
-    .nav-link{
+.navbar-top {
+  li {
+    .nav-link {
       position: relative;
-      padding-bottom: 10px!important;
+      padding-bottom: 10px !important;
     }
-    a{
+
+    a {
       font-size: 16px;
-      padding: 0!important;
+      padding: 0 !important;
       transition: color 0.3s ease;
       font-weight: bold;
-      &.active{
-        color: $primary!important;
-        &::after{
+
+      &.active {
+        color: $primary !important;
+
+        &::after {
           content: '';
           border: solid $primary;
           position: absolute;
@@ -25,8 +28,9 @@
           transform-origin: 0 0 0;
         }
       }
-      &:not(.active){
-        &::after{
+
+      &:not(.active) {
+        &::after {
           content: '';
           border: solid $primary;
           position: absolute;
@@ -41,8 +45,9 @@
         }
       }
     }
-    .nav-link:hover{
-      &::after{
+
+    .nav-link:hover {
+      &::after {
         content: '';
         border: solid $primary;
         position: absolute;
@@ -52,21 +57,38 @@
       }
     }
   }
-}
-
-.navs-info{
-  .active{
-    background-color: $info!important;
-  }
-  .nav-link:not(.active){
-    color: $info!important;
-  }
-}
-
-.navbar-dark{
-  li{
-    a{
-      font-weight: bold!important;
+  @media (max-width: 425px){
+    .nav-item{
+      margin-bottom: 10px;
     }
+  }
+}
+
+.navs-info {
+  .active {
+    background-color: $info !important;
+    margin-right: 8px !important;
+  }
+
+  .nav-link:not(.active) {
+    color: $white !important;
+    background-color: $black !important;
+    margin-right: 8px !important;
+  }
+}
+
+.navbar-dark {
+  li {
+    a {
+      font-weight: bold !important;
+    }
+  }
+}
+
+.navbar-expand-xs {
+  flex-flow: row nowrap!important;
+  justify-content: flex-start!important;
+  .navbar-nav{
+    flex-direction: row!important;
   }
 }

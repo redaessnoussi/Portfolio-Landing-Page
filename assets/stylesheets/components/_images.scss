@@ -27,3 +27,15 @@
     opacity: 0.8;
   }
 }
+
+@include media-breakpoint-between(md, md) {
+  .img-home-md {
+    z-index: 1;
+    max-width: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -180px;
+    margin-right: 0;
+  }
+}
