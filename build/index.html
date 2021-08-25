@@ -15,7 +15,7 @@
 
   <header>
     <!-- Start: Navigation Menu -->
-    <nav id="top-menu" class="top-menu navbar navbar-dark navbar-expand-md fixed-top py-lg-4 px-180 bg-dark">
+    <nav id="top-menu" class="top-menu navbar navbar-dark navbar-expand-md fixed-top py-lg-4 px-180">
         <a class="navbar-brand" href="#">
           <img src="img/logo.png" height="40" alt="logo">
         </a>
@@ -67,7 +67,16 @@
             </div>
           </div>
           <div class="col-lg-7 col-md-6 position-static">
-            <img src="img/img02.png" alt="personal image" class="img-fluid img-home-md" width="1000">
+            <div class="position-relative">
+              <img src="img/img02.png" alt="personal image" class="img-fluid img-home-md" width="1000">
+              <div class="position-absolute" style="bottom: -20px;right: 0px;z-index: -1;width: 700px;">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#E72F1680"
+                    d="M34.7,-60.6C45.8,-53.7,56.3,-46.1,64.1,-35.9C72,-25.7,77.2,-12.8,78.9,1C80.6,14.8,78.8,29.6,70.4,39C62.1,48.4,47.3,52.4,34.5,59.1C21.7,65.8,10.8,75.2,-2.9,80.2C-16.6,85.1,-33.2,85.7,-47.1,79.6C-60.9,73.5,-72,60.7,-74.4,46.3C-76.8,32,-70.7,16,-68.6,1.2C-66.6,-13.6,-68.7,-27.3,-66.3,-41.6C-63.8,-56,-56.8,-71.1,-45,-77.6C-33.2,-84,-16.6,-81.9,-2.4,-77.8C11.8,-73.7,23.6,-67.5,34.7,-60.6Z"
+                    transform="translate(100 100)"></path>
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -80,31 +89,31 @@
       <!-- Start: Section 2 - About Me -->
       <div id="description" class="bg-dark container-fluid px-180 py-128">
         <div class="row align-items-center justify-content-between">
-          <div class="col-md-6 col-lg-5 mb-xs-5">
-            <ul class="d-flex flex-wrap justify-content-around list-unstyled mb-0">
-              <li>
+          <div class="col-md-6 col-lg-auto mb-xs-5" style="max-width: 426px;">
+            <ul class="d-inline-flex flex-wrap justify-content-center list-unstyled mb-0">
+              <li class="ml-lg-5 mb-5">
                 <div class="badge-alt bg-white rounded-circle text-center" counter="150">
                   <span>Happy Clients</span>
                 </div>
               </li>
-              <li class="ml-5">
+              <li class="ml-5 mb-5">
                 <div class="badge-alt bg-white rounded-circle text-center" counter="12">
                   <span>Projects Done</span>
                 </div>
               </li>
-              <li class="ml-lg-5 mt-5">
+              <li class="mr-5">
                 <div class="badge-alt bg-white rounded-circle text-center" counter="3">
                   <span>Projects In Progresss</span>
                 </div>
               </li>
-              <li class="ml-5 mt-5">
+              <li>
                 <div class="badge-alt bg-white rounded-circle text-center" counter="95">
                   <span>Working Hours</span>
                 </div>
               </li>
             </ul>
           </div>
-          <div class="col-md-6 col-lg-6">
+          <div class="col-md-6 col-lg-7">
             <h3 class="mb-4 text-white">About Me</h3>
             <h1 class="text-primary font-weight-bold">Unleash Your Creativity</h1>
             <h4 class="text-white">A Lead UX &amp; UI Designer based in Canada, with 8+ Years of Experience</h4>
@@ -371,8 +380,8 @@
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae nesciunt obcaecati accusamus eos? Sequi,
               amet!
             </p>
-            <p class="text-white"><strong class="fwMedium">© <a href="=&quot;javascript:void(0);&quot;">SmithJohnson</a>
-                2020 | All Rights Reserved</strong></p>
+            <p class="d-md-block d-none text-white"><strong>© <a href="=&quot;javascript:void(0);&quot;">SmithJohnson</a>
+              2020 | All Rights Reserved</strong></p>
           </div>
           <div class="col-lg-7 col-md-6">
             <h4 class="text-white">Any Question?</h4>
@@ -423,9 +432,9 @@
 
   <!-- Start: Footer -->
   <footer>
-    <div class="container-fluid px-0">
-      <nav class="bg-secondary navbar navbar-dark navbar-expand-sm px-180">
-        <ul class="navbar-nav">
+    <div class="bg-secondary container-fluid position-relative px-0 text-center">
+      <nav class="navbar navbar-dark navbar-expand-xs px-180 px-4">
+        <ul class="d-flex flex-wrap justify-content-center mx-4 navbar-nav">
           <li class="mr-4 nav-item">
             <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
           </li>
@@ -443,6 +452,10 @@
           </li>
         </ul>
       </nav>
+      <!-- Start: Footer Credits (Mobile Only) -->
+      <p class="mb-0 mt-3 px-4 text-white d-md-none"><strong>© <a href="=&quot;javascript:void(0);&quot;" class="text-white">SmithJohnson</a>
+        2020 | All Rights Reserved</strong></p>
+      <!-- End: Footer Credits -->
     </div>
   </footer>
   <!-- End: Footer -->
@@ -453,14 +466,16 @@
 
     //Top Menu Addinh Bg Dark on Load
     $(document).ready(function () {
-      if ($(this).scrollTop() > 5) {
+      if ($(this).scrollTop() > 1) {
         $("#top-menu").addClass("bg-dark");
+      }else{
+        $("#top-menu").removeClass("bg-dark");
       }
     });
 
     //Top Menu Addinh Bg Dark on Scrolling
     $(window).scroll(function () {
-      if ($(this).scrollTop() > 5) {
+      if ($(this).scrollTop() > 1) {
         $("#top-menu").addClass("bg-dark");
       } else {
         $("#top-menu").removeClass("bg-dark");
@@ -492,7 +507,7 @@
         //Home Menu Click Effects
         if(flag && hash == "#home"){
 
-          gsap.fromTo($(hash).find('img'), {duration: 0.5, x: 100, opacity: 0}, {duration: 0.5, x: 0, opacity: 1, delay: 0.5});
+          gsap.fromTo($(hash).find('img, svg'), {duration: 0.5, x: 100, opacity: 0}, {duration: 0.5, x: 0, opacity: 1, delay: 0.5});
           gsap.fromTo($(hash).find('h3'), {duration: 0.5, x: -100, opacity: 0}, {duration: 0.5, x: 0, opacity: 1, delay: 1});
           gsap.fromTo($(hash).find('h1'), {duration: 0.5, x: -100, opacity: 0}, {duration: 0.5, x: 0, opacity: 1, delay: 1.3});
           gsap.fromTo($(hash).find('p'), {duration: 0.5, x: -200, opacity: 0}, {duration: 0.5, x: 0, opacity: 1, delay: 1.5});
