@@ -9635,6 +9635,23 @@ a.text-dark:hover, a.text-dark:focus {
   height: 100vh;
 }
 
+.mt-100 {
+  margin-top: 100vh !important;
+}
+
+@media (min-width: 2150px) {
+  .vh-xl-62 {
+    height: 60vh !important;
+  }
+  .mt-62 {
+    margin-top: 60vh !important;
+  }
+  .px-xl-500 {
+    padding-left: 500px !important;
+    padding-right: 500px !important;
+  }
+}
+
 .mb-100 {
   margin-bottom: 100px;
 }
