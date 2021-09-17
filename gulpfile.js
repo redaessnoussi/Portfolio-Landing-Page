@@ -75,6 +75,17 @@ function jsTask() {
 			'assets/javascripts/vendor/bootstrap/scrollspy.js',
 			'assets/javascripts/vendor/bootstrap/tab.js',
 			'assets/javascripts/vendor/bootstrap/index.js',
+      'assets/javascripts/vendor/gsap/CSSRulePlugin.min.js',
+      'assets/javascripts/vendor/gsap/Draggable.min.js',
+      'assets/javascripts/vendor/gsap/EaselPlugin.min.js',
+      'assets/javascripts/vendor/gsap/EasePack.min.js',
+      'assets/javascripts/vendor/gsap/MotionPathPlugin.min.js',
+      'assets/javascripts/vendor/gsap/PixiPlugin.min.js',
+      'assets/javascripts/vendor/gsap/ScrollToPlugin.min.js',
+      'assets/javascripts/vendor/gsap/ScrollTrigger.min.js',
+      'assets/javascripts/vendor/gsap/TextPlugin.min.js',
+      'assets/javascripts/vendor/gsap/gsap.min.js',
+
 			'assets/javascripts/babel/main.js'
 			])
 			.pipe(concat('main.js'))

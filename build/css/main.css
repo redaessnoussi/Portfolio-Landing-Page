@@ -9599,7 +9599,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-.navs-info .active {
+.navs-info .nav-link.active {
   background-color: #17a2b8 !important;
   margin-right: 8px !important;
 }
