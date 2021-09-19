@@ -10,14 +10,10 @@
   <!-- Line Awesome -->
   <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
-  <style>
-
-  </style>
 </head>
 
 <body data-spy="scroll" data-target="#top-menu" data-offset="98">
 
-  
     <!-- Start: Navigation Menu -->
     <nav id="top-menu" class="top-menu navbar navbar-dark navbar-expand-md fixed-top py-lg-4 px-180 px-xl-500">
         <a class="navbar-brand" href="#">
@@ -51,11 +47,8 @@
     </nav>
     <!-- End: Navigation Menu -->
 
-
-
-
     <!-- Start: Section 1 - Description -->
-    <div id="home" class="w-100" style="position: absolute; top: 0;">
+    <div id="home" class="section w-100 h-100" style="position: absolute; top: 0;">
       <div class="container-fluid mx-md-4" style="position: fixed;top: 0;background-image: linear-gradient(to right, #000000, #0f0b0e, #161419, #1a232c, #1a232c);">
         <div class="align-items-center flex-xs-column justify-content-xs-end px-180 px-xl-500 row vh-100 vh-xl-62">
           <div class="col-lg-5 col-md-6">
@@ -89,7 +82,7 @@
     <div class="mt-62 mt-100" style="position: relative;z-index: 2;">
       
       <!-- Start: Section 2 - About Me -->
-      <div id="description" class="bg-dark container-fluid px-180 px-xl-500 py-128">
+      <div id="description" class="section bg-dark container-fluid px-180 px-xl-500 py-128">
         <div class="row align-items-center justify-content-between">
           <div class="col-md-6 col-lg-auto mb-xs-5" style="max-width: 426px;">
             <ul class="d-inline-flex flex-wrap justify-content-center list-unstyled mb-0">
@@ -128,7 +121,7 @@
       <!-- End: Section 2 - About Me -->
 
       <!-- Start: Section 3 - My Services -->
-      <div id="services" class="bg-white container-fluid px-180 px-xl-500 py-128 text-center" style="position: relative;
+      <div id="services" class="section bg-white container-fluid px-180 px-xl-500 py-128 text-center" style="position: relative;
       z-index: 2;">
         <h3>My Services</h3>
         <h1 class="font-weight-bold text-info mb-100">What Can I Do Best ?</h1>
@@ -180,7 +173,7 @@
       <!-- End: Section 3 - My Services -->
 
       <!-- Start: Section 4 - Expertise -->
-      <div id="expertise" class="bg-dark container-fluid px-180 px-xl-500 py-128" style="position: relative;z-index: 2;">
+      <div id="expertise" class="section bg-dark container-fluid px-180 px-xl-500 py-128" style="position: relative;z-index: 2;">
         <div class="row align-items-center">
           <div class="col-lg-5 col-md-6 mb-xs-5">
             <h3 class="mb-4 text-white">Expertise</h3>
@@ -254,7 +247,7 @@
       <!-- End: Section 4 - Expertise -->
 
       <!-- Start: Section 5 - Portfolio -->
-      <div id="portfolio" class="bg-white container-fluid px-180 px-xl-500 py-128" style="position: relative;z-index: 2;">
+      <div id="portfolio" class="section bg-white container-fluid px-180 px-xl-500 py-128" style="position: relative;z-index: 2;">
         <div class="align-items-center justify-content-between row mb-5">
           <div class="col-lg-5 mb-4">
             <h3>Portfolio</h3>
@@ -372,7 +365,7 @@
       <!-- End: Section 5 - Portfolio -->
 
       <!-- Start: Section 7 - Contact -->
-      <div id="contact" class="bg-dark container-fluid px-180 px-xl-500 py-128" style="position: relative;
+      <div id="contact" class="section bg-dark container-fluid px-180 px-xl-500 py-128" style="position: relative;
       z-index: 2;">
         <div class="row">
           <div class="col-lg-5 col-md-6 mb-xs-5">
@@ -428,9 +421,8 @@
         </div>
       </div>
       <!-- End: Section 7 - Contact -->
+
     </div>
-
-
 
   <!-- Start: Footer -->
   <footer>
@@ -471,6 +463,14 @@
 
     //Variables Declarions Goes Here!
     flagHome = flagAbout = flagServices = flagSkills = flagWorks = flagContact = true;
+    
+    // Sections IDs Strings
+    var home = "#home";
+    var description = "#description";
+    var services = "#services";
+    var expertise = "#expertise";
+    var portfolio = "#portfolio";
+    var contact = "#contact";
 
     //Top Menu Addinh Bg Dark on Load
     $(document).ready(function () {
@@ -612,73 +612,37 @@
         }, 800);
 
         //Home Menu/Section Effect
-        if(this.hash == "#home"){
+        if(this.hash == home){
           homeEffect(flagHome, hash);
         }
 
         //About Menu/Section Effect
-        if(this.hash == "#description"){
+        if(this.hash == description){
           aboutEffect(flagAbout, hash);
         }
 
         //Services Menu/Section Effect
-        if(this.hash == "#services"){
+        if(this.hash == services){
           servicesEffects(flagServices, hash);
         }
 
         //Skills Menu/Section Effect
-        if(this.hash == "#expertise"){
+        if(this.hash == expertise){
           skillsEffects(flagSkills, hash);
         }
 
         //Portfolio Menu/Section Effects
-        if(this.hash == "#portfolio"){
+        if(this.hash == portfolio){
           portfolioEffects(flagWorks, hash);
         }
 
         //Contact Menu/Section Effects
-        if(this.hash == "#contact"){
+        if(this.hash == contact){
           contactEffects(flagContact, hash);
         }
+
       }
     });
-
-    // //Scroll Spy Fires on Section Change
-    // $(window).on('activate.bs.scrollspy', function (e,obj) {
-    //   var spy = obj.relatedTarget;
-
-    //   console.log("===>"+spy);
-
-    //   //Home Menu/Section Effect
-    //   if(spy == "#home"){
-    //     homeEffect(flagHome, spy);
-    //   }
-
-    //   //About Menu/Section Effect
-    //   if(spy == "#description"){
-    //     aboutEffect(flagAbout, spy);
-    //   }
-
-    //   //Services Menu/Section Effect
-    //   if(spy == "#services"){
-    //     servicesEffects(flagServices, spy);
-    //   }
-
-    //   //Skills Menu/Section Effect
-    //   if(spy == "#expertise"){
-    //     skillsEffects(flagSkills, spy);
-    //   }
-
-    //   //Portfolio Menu/Section Effects
-    //   if(spy == "#portfolio"){
-    //     portfolioEffects(flagWorks, spy);
-    //   }
-
-    //   //Contact Menu/Section Effects
-    //   if(spy == "#contact"){
-    //     contactEffects(flagContact, spy);
-    //   }
-    // });
 
     //Display Projects Infos on Hover
     $('.img-project').hover(function () {
@@ -689,10 +653,62 @@
       $(this).find('.img-caption').css('transform','scale(0)')
     });
 
-    // $('#top-menu a').on('shown.bs.tab', function (e) {
-    //   console.log(e.target); // newly activated tab
-    //   // e.relatedTarget // previous active tab
-    // })
+    ////////////////////////////////////////////////////////////////////////
+    var $window = $(window);
+
+    //On Scroll Animations for sections
+    $(window).scroll(function(event) {
+      var lastScrollTop = 0;
+
+      var winTop = $(this).scrollTop();
+      var $animation_elements = $('.section');
+      var window_height = $window.height();
+      var window_top_position = $window.scrollTop();
+      var window_bottom_position = (window_top_position + window_height);
+
+      var top = $.grep($animation_elements, function(item) {
+        var $element = $(item);
+        var element_height = $element.outerHeight();
+        var element_top_position = $element.offset().top + 150;
+        var element_bottom_position = (element_top_position + element_height);
+
+        //check to see if this current container is within viewport
+        if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+          $section = $(item).last().attr('id');
+          
+          switch ($section) {
+            case "home":
+              homeEffect(flagHome, home);
+              break;
+
+            case "description":
+              aboutEffect(flagAbout, description);
+              break;
+            
+            case "services":
+              servicesEffects(flagServices, services);
+              break;
+
+            case "expertise":
+              skillsEffects(flagSkills, expertise);
+              break;
+            
+            case "portfolio":
+              portfolioEffects(flagWorks, portfolio);
+              break;
+
+            case "contact":
+              contactEffects(flagContact, contact);
+              break;
+          
+            default:
+              break;
+          }
+        }
+      });
+    });
+
+    $window.trigger('scroll');
 
   </script>
   
