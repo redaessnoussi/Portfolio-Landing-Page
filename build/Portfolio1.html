@@ -51,9 +51,9 @@
     <div id="home" class="section w-100 h-100" style="position: absolute; top: 0;">
       <div class="container-fluid mx-md-4" style="position: fixed;top: 0;background-image: linear-gradient(to right, #000000, #0f0b0e, #161419, #1a232c, #1a232c);">
         <div class="align-items-center flex-xs-column justify-content-xs-end px-180 px-xl-500 row vh-100 vh-xl-62">
-          <div class="col-lg-5 col-md-6">
+          <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
             <h3 class="mb-4 text-white">Frontend Developer</h3>
-            <h1 class="text-primary display-3 font-weight-bold">Alex <span class="text-white">Steel</span></h1>
+            <h1 class="text-primary display-4 font-weight-bold">Alex <span class="text-white">Steel</span></h1>
             <p class="mb-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo ex
               provident
               laudantium animi numquam itaque architecto tenetur cum repudiandae? Nostrum!
@@ -63,13 +63,15 @@
               <button type="button" class="btn btn-info btn-lg btn-xs font-weight-bold px-md-4">Hire Me</button>
             </div>
           </div>
-          <div class="col-lg-7 col-md-6 position-static">
+          <div class="align-self-lg-end col-lg-7 col-md-6 position-static">
             <div class="d-flex justify-content-center position-relative">
-              <img src="img/img02.png" alt="personal image" class="img-fluid img-home-md" width="700" style="max-width: 700px;">
-              <div class="position-absolute" style="bottom: -40px;z-index: -1;max-width: 650px;width: 650px;">
-                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#E72F1680" d="M34.7,-60.6C45.8,-53.7,56.3,-46.1,64.1,-35.9C72,-25.7,77.2,-12.8,78.9,1C80.6,14.8,78.8,29.6,70.4,39C62.1,48.4,47.3,52.4,34.5,59.1C21.7,65.8,10.8,75.2,-2.9,80.2C-16.6,85.1,-33.2,85.7,-47.1,79.6C-60.9,73.5,-72,60.7,-74.4,46.3C-76.8,32,-70.7,16,-68.6,1.2C-66.6,-13.6,-68.7,-27.3,-66.3,-41.6C-63.8,-56,-56.8,-71.1,-45,-77.6C-33.2,-84,-16.6,-81.9,-2.4,-77.8C11.8,-73.7,23.6,-67.5,34.7,-60.6Z" transform="translate(100 100)"></path>
-                </svg>
+              <div class="position-relative" style="width: 700px;">
+                <img src="img/img02.png" alt="personal image" class="img-fluid img-home-mdxx">
+                <div class="position-absolute" style="bottom: -20px;z-index: -1;min-width: -webkit-fill-available;max-height: 900px;">
+                  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#E72F1680" d="M34.7,-60.6C45.8,-53.7,56.3,-46.1,64.1,-35.9C72,-25.7,77.2,-12.8,78.9,1C80.6,14.8,78.8,29.6,70.4,39C62.1,48.4,47.3,52.4,34.5,59.1C21.7,65.8,10.8,75.2,-2.9,80.2C-16.6,85.1,-33.2,85.7,-47.1,79.6C-60.9,73.5,-72,60.7,-74.4,46.3C-76.8,32,-70.7,16,-68.6,1.2C-66.6,-13.6,-68.7,-27.3,-66.3,-41.6C-63.8,-56,-56.8,-71.1,-45,-77.6C-33.2,-84,-16.6,-81.9,-2.4,-77.8C11.8,-73.7,23.6,-67.5,34.7,-60.6Z" transform="translate(100 100)"></path>
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
@@ -425,9 +427,9 @@
 
   <!-- Start: Footer -->
   <footer>
-    <div class="bg-secondary container-fluid position-relative px-0 text-center">
-      <nav class="navbar navbar-dark navbar-expand-xs px-180 px-xl-500 px-4">
-        <ul class="d-flex flex-wrap justify-content-center mx-4 navbar-nav">
+    <div class="bg-secondary container-fluid p-3 position-relative text-center">
+      <nav class="navbar navbar-dark navbar-expand-xs px-180 px-xl-500 py-0">
+        <ul class="d-flex flex-wrap justify-content-center navbar-nav">
           <li class="mr-4 nav-item">
             <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
           </li>
@@ -446,8 +448,10 @@
         </ul>
       </nav>
       <!-- Start: Footer Credits (Mobile Only) -->
-      <p class="mb-0 mt-3 px-4 text-white d-md-none"><strong>© <a href="=&quot;javascript:void(0);&quot;" class="text-white">SmithJohnson</a>
-        2020 | All Rights Reserved</strong></p>
+      <p class="d-md-none mb-0 mt-3 text-white" style="font-size: 14px;">
+        <strong>© <a href="=&quot;javascript:void(0);&quot;" class="text-white">SmithJohnson</a>
+        2020 | All Rights Reserved</strong>
+      </p>
       <!-- End: Footer Credits -->
     </div>
   </footer>
