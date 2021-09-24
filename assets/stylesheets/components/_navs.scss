@@ -64,6 +64,13 @@
   }
 }
 
+
+@media (max-width: 425px){
+  .bg-dark-xs{
+    background-color: $dark !important;
+  }
+}
+
 .navs-info {
   .nav-link.active {
     background-color: $info !important;

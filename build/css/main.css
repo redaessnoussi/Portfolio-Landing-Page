@@ -9599,6 +9599,12 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+@media (max-width: 425px) {
+  .bg-dark-xs {
+    background-color: #000000 !important;
+  }
+}
+
 .navs-info .nav-link.active {
   background-color: #17a2b8 !important;
   margin-right: 8px !important;
@@ -9706,10 +9712,10 @@ a.text-dark:hover, a.text-dark:focus {
   overflow-wrap: break-word;
   position: relative;
   padding: 15px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
-  width: 130px;
-  height: 130px;
+  width: 120px;
+  height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
