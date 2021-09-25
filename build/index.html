@@ -1,15 +1,707 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/main.min.css">
+  <title>Portfolio Developer</title>
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Line Awesome -->
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
 </head>
-<body>
-  <header></header>
-  
-  <footer></footer>
+
+<body data-spy="scroll" data-target="#top-menu" data-offset="98">
+
+    <!-- Start: Navigation Menu -->
+    <nav id="top-menu" class="top-menu navbar navbar-dark bg-dark-xs navbar-expand-md fixed-top py-lg-4 px-180 px-xl-500">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" height="40" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav navbar-top">
+            <li class="mr-lg-5 mr-md-3 nav-item">
+              <a class="nav-link" href="#home">HOME<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="mr-lg-5 mr-md-3 nav-item">
+              <a class="nav-link" href="#description">ABOUT</a>
+            </li>
+            <li class="mr-lg-5 mr-md-3 nav-item">
+              <a class="nav-link" href="#services">SERVICES</a>
+            </li>
+            <li class="mr-lg-5 mr-md-3 nav-item">
+              <a class="nav-link" href="#expertise">SKILLS</a>
+            </li>
+            <li class="mr-lg-5 mr-md-3 nav-item">
+              <a class="nav-link" href="#portfolio">WORKS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <!-- End: Navigation Menu -->
+
+    <!-- Start: Section 1 - Description -->
+    <div id="home" class="section w-100 h-100" style="position: absolute; top: 0;">
+      <div class="container-fluid mx-md-4" style="position: fixed;top: 0;background-image: linear-gradient(to right, #000000, #0f0b0e, #161419, #1a232c, #1a232c);">
+        <div class="align-items-center flex-xs-column justify-content-xs-end px-180 px-xl-500 row vh-100 vh-xl-62">
+          <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+            <h3 class="mb-4 text-white">Frontend Developer</h3>
+            <h1 class="text-primary display-4 font-weight-bold">Alex <span class="text-white">Steel</span></h1>
+            <p class="mb-5 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo ex
+              provident
+              laudantium animi numquam itaque architecto tenetur cum repudiandae? Nostrum!
+            </p>
+            <div class="d-flex">
+              <button type="button" class="btn btn-lg btn-xs btn-primary font-weight-bold mr-4 px-md-4 text-white">BIOGRAPHY</button>
+              <button type="button" class="btn btn-info btn-lg btn-xs font-weight-bold px-md-4">Hire Me</button>
+            </div>
+          </div>
+          <div class="align-self-lg-end col-lg-7 col-md-6 position-static">
+            <div class="d-flex justify-content-center position-relative">
+              <div class="position-relative" style="width: 700px;">
+                <img src="img/img02.png" alt="personal image" class="img-fluid img-home-mdxx">
+                <div class="position-absolute" style="bottom: -20px;z-index: -1;min-width: -webkit-fill-available;max-height: 900px;">
+                  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#E72F1680" d="M34.7,-60.6C45.8,-53.7,56.3,-46.1,64.1,-35.9C72,-25.7,77.2,-12.8,78.9,1C80.6,14.8,78.8,29.6,70.4,39C62.1,48.4,47.3,52.4,34.5,59.1C21.7,65.8,10.8,75.2,-2.9,80.2C-16.6,85.1,-33.2,85.7,-47.1,79.6C-60.9,73.5,-72,60.7,-74.4,46.3C-76.8,32,-70.7,16,-68.6,1.2C-66.6,-13.6,-68.7,-27.3,-66.3,-41.6C-63.8,-56,-56.8,-71.1,-45,-77.6C-33.2,-84,-16.6,-81.9,-2.4,-77.8C11.8,-73.7,23.6,-67.5,34.7,-60.6Z" transform="translate(100 100)"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- End: Section 1 - Description -->
+
+    <div class="mt-62 mt-100" style="position: relative;z-index: 2;">
+      
+      <!-- Start: Section 2 - About Me -->
+      <div id="description" class="section bg-dark container-fluid px-180 px-xl-500 py-128">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-6 col-lg-auto mb-xs-5" style="max-width: 426px;">
+            <ul class="d-inline-flex flex-wrap justify-content-center list-unstyled mb-0">
+              <li class="ml-lg-5 mb-5">
+                <div class="badge-alt bg-white rounded-circle text-center" counter="150">
+                  <span>Happy Clients</span>
+                </div>
+              </li>
+              <li class="ml-5 mb-5">
+                <div class="badge-alt bg-white rounded-circle text-center" counter="12">
+                  <span>Projects Done</span>
+                </div>
+              </li>
+              <li class="mr-5">
+                <div class="badge-alt bg-white rounded-circle text-center" counter="3">
+                  <span>Projects In Progresss</span>
+                </div>
+              </li>
+              <li>
+                <div class="badge-alt bg-white rounded-circle text-center" counter="95">
+                  <span>Working Hours</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-7">
+            <h3 class="mb-4 text-white">About Me</h3>
+            <h1 class="text-primary font-weight-bold">Unleash Your Creativity</h1>
+            <h4 class="text-white">A Lead UX &amp; UI Designer based in Canada, with 8+ Years of Experience</h4>
+            <p class="mb-5 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ullam, quidem officiis
+              nemo voluptatum dolorum est deleniti consequatur ad totam!</p>
+            <a href="#" class="btn btn-info btn-lg px-5 text-white font-weight-bold">Download CV</a>
+          </div>
+        </div>
+      </div>
+      <!-- End: Section 2 - About Me -->
+
+      <!-- Start: Section 3 - My Services -->
+      <div id="services" class="section bg-white container-fluid px-180 px-xl-500 py-128 text-center" style="position: relative;
+      z-index: 2;">
+        <h3>My Services</h3>
+        <h1 class="font-weight-bold text-info mb-100">What Can I Do Best ?</h1>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-65 mb-lg-0">
+            <div class="card card-icon shadow-sm h-100">
+              <i class="lab la-adobe icon"></i>
+              <div class="card-body text-left">
+                <h4 class="mt-5">UI/UX Design</h4>
+                <hr class="bg-info">
+                <p class="mb-0">I've created a user interface and user experience with some process and method</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-65 mb-lg-0">
+            <div class="card card-icon shadow-sm h-100">
+              <i class="las la-laptop-code icon"></i>
+              <div class="card-body text-left">
+                <h4 class="mt-5">
+                  Web Development
+                </h4>
+                <hr class="bg-info">
+                <p class="mb-0">Building a full stack structure for our working workflow process</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-65 mb-md-0">
+            <div class="card card-icon shadow-sm h-100">
+              <i class="las la-fill-drip icon"></i>
+              <div class="card-body text-left">
+                <h4 class="mt-5">Visual Branding</h4>
+                <hr class="bg-info">
+                <p class="mb-0">Making an unique identity for marketing and promoting company goals</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-icon shadow-sm h-100">
+              <i class="las la-mobile icon"></i>
+              <div class="card-body text-left">
+                <h4 class="mt-5">App Development</h4>
+                <hr class="bg-info">
+                <p class="mb-0">Building some of responsive mobile for our working workflow process</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End: Section 3 - My Services -->
+
+      <!-- Start: Section 4 - Expertise -->
+      <div id="expertise" class="section bg-dark container-fluid px-180 px-xl-500 py-128" style="position: relative;z-index: 2;">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-md-6 mb-xs-5">
+            <h3 class="mb-4 text-white">Expertise</h3>
+            <h1 class="text-primary font-weight-bold">My Skills &amp; Tools</h1>
+            <h4 class="text-white">Every Day is a New Challenge</h4>
+            <p class="mb-5 text-white">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae nesciunt obcaecati accusamus eos? Sequi,
+              amet!
+            </p>
+            <button class="btn btn-info btn-lg px-5 text-white font-weight-bold">Hire Me</button>
+          </div>
+          <div class="col-lg-7 col-md-6">
+            <div class="align-items-center row mb-4">
+              <div class="col-lg-4 col-md-6">
+                <h5 class="mb-0 mb-xs-2 text-white">HTML/HTML5</h5>
+              </div>
+              <div class="col">
+                <div class="progress">
+                  <div class="progress-bar" data-name="skill-1" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="align-items-center row mb-4">
+              <div class="col-lg-4 col-md-6">
+                <h5 class="mb-0 mb-xs-2 text-white">JS/jQuery</h5>
+              </div>
+              <div class="col">
+                <div class="progress">
+                  <div class="progress-bar" data-name="skill-2" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="align-items-center row mb-4">
+              <div class="col-lg-4 col-md-6">
+                <h5 class="mb-0 mb-xs-2 text-white">CSS/Sass/Bootstrap</h5>
+              </div>
+              <div class="col">
+                <div class="progress">
+                  <div class="progress-bar" data-name="skill-3" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="align-items-center row mb-4">
+              <div class="col-lg-4 col-md-6">
+                <h5 class="mb-0 mb-xs-2 text-white">ReactJS</h5>
+              </div>
+              <div class="col">
+                <div class="progress">
+                  <div class="progress-bar" data-name="skill-4" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="align-items-center row">
+              <div class="col-lg-4 col-md-6">
+                <h5 class="mb-0 mb-xs-2 text-white">Git/GitHub</h5>
+              </div>
+              <div class="col">
+                <div class="progress">
+                  <div class="progress-bar" data-name="skill-5" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- End: Section 4 - Expertise -->
+
+      <!-- Start: Section 5 - Portfolio -->
+      <div id="portfolio" class="section bg-white container-fluid px-180 px-xl-500 py-128" style="position: relative;z-index: 2;">
+        <div class="align-items-center justify-content-between row mb-5">
+          <div class="col-lg-5 mb-4">
+            <h3>Portfolio</h3>
+            <h1 class="text-info font-weight-bold mb-0">My Creative Work</h1>
+          </div>
+          <div class="col-lg-auto">
+            <ul class="nav nav-pills navs-info" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a class="active h6 nav-link" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">ALL</a>
+              </li>
+              <li class="nav-item">
+                <a class="h6 nav-link" data-toggle="pill" href="#pills-landings" role="tab" aria-controls="pills-landings" aria-selected="false">LANDING PAGES</a>
+              </li>
+              <li class="nav-item">
+                <a class="h6 nav-link" data-toggle="pill" href="#pills-apps" role="tab" aria-controls="pills-apps" aria-selected="false">MOBILE APPS</a>
+              </li>
+              <li class="nav-item">
+                <a class="h6 nav-link" data-toggle="pill" href="#pills-webs" role="tab" aria-controls="pills-webs" aria-selected="false">WEB APPS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Start: Porjects Section (Navs) -->
+        <div class="tab-content" id="pills-works">
+          <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="shadow img-project">
+                  <img src="img/project-1.jpg" class="img-fluid w-100" alt="project 1">
+                  <div class="img-caption p-3 text-white text-center" style="transform: scale(0);">
+                    <h3>Project 1</h3>
+                    <h4>Bootstrap, jQruery &amp; Sass</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="shadow img-project">
+                  <img src="img/project-2.jpg" class="img-fluid w-100" alt="project 2">
+                  <div class="img-caption p-3 text-white text-center" style="transform: scale(0);">
+                    <h3>Project 2</h3>
+                    <h4>Elementor &amp; WP Bakery</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="shadow img-project">
+                  <img src="img/project-3.jpg" class="img-fluid w-100" alt="project 3">
+                  <div class="img-caption p-3 text-white text-center" style="transform: scale(0);">
+                    <h3>Project 3</h3>
+                    <h4>Wordpress</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="shadow img-project">
+                  <img src="img/project-4.jpg" class="img-fluid w-100" alt="project 4">
+                  <div class="img-caption p-3 text-white text-center">
+                    <h3>Project 4</h3>
+                    <h4>Wordpress &amp; Woocommerce</h4>
+                  </div>
+                </div>
+              </div><div class="col-lg-4 col-md-6 mb-4">
+                <div class="shadow img-project">
+                  <img src="img/project-5.jpg" class="img-fluid w-100" alt="project 5">
+                  <div class="img-caption p-3 text-white text-center">
+                    <h3>Project 5</h3>
+                    <h4>Wordpress, WPBakery &amp; Woocommerce</h4>
+                  </div>
+                </div>
+              </div><div class="col-lg-4 col-md-6 mb-4">
+                <div class="shadow img-project">
+                  <img src="img/project-6.jpg" class="img-fluid w-100" alt="project 6">
+                  <div class="img-caption p-3 text-white text-center" style="transform: scale(0);">
+                    <h3>Project 6</h3>
+                    <h4>Wordpress, Elementor &amp; WPBakery</h4>
+                  </div>
+                </div>
+              </div><div class="col-lg-4 col-md-6 mb-4">
+                <div class="shadow img-project">
+                  <img src="img/project-7.jpg" class="img-fluid w-100" alt="project 7">
+                  <div class="img-caption p-3 text-white text-center">
+                    <h3>Project 7</h3>
+                    <h4>Wordpress</h4>
+                  </div>
+                </div>
+              </div><div class="col-lg-4 col-md-6 mb-4">
+                <div class="shadow img-project">
+                  <img src="img/project-8.jpg" class="img-fluid w-100" alt="project 8">
+                  <div class="img-caption p-3 text-white text-center" style="transform: scale(0);">
+                    <h3>Project 8</h3>
+                    <h4>Wordpress</h4>
+                  </div>
+                </div>
+              </div><div class="col-lg-4 col-md-6">
+                <div class="shadow img-project">
+                  <img src="img/project-9.jpg" class="img-fluid w-100" alt="project 9">
+                  <div class="img-caption p-3 text-white text-center" style="transform: scale(0);">
+                    <h3>Project 9</h3>
+                    <h4>Elementor</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="pills-landings" role="tabpanel" aria-labelledby="pills-landings"></div>
+          
+          <div class="tab-pane fade" id="pills-apps" role="tabpanel" aria-labelledby="pills-apps"></div>
+
+          <div class="tab-pane fade" id="pills-webs" role="tabpanel" aria-labelledby="pills-webs"></div>
+        </div>
+        <!-- End: Porjects Section (Navs) -->
+
+      </div>
+      <!-- End: Section 5 - Portfolio -->
+
+      <!-- Start: Section 7 - Contact -->
+      <div id="contact" class="section bg-dark container-fluid px-180 px-xl-500 py-128" style="position: relative;
+      z-index: 2;">
+        <div class="row">
+          <div class="col-lg-5 col-md-6 mb-xs-5">
+            <img src="img/logo.png" class="img-fluid" width="250">
+            <h1 class="font-weight-bold mt-5 mb-4 text-primary">Frontend <span class="text-white">Developer</span></h1>
+            <p class="text-white mb-4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae nesciunt obcaecati accusamus eos? Sequi,
+              amet!
+            </p>
+            <p class="d-md-block d-none text-white"><strong>© <a href="=&quot;javascript:void(0);&quot;">SmithJohnson</a>
+              2020 | All Rights Reserved</strong></p>
+          </div>
+          <div class="col-lg-7 col-md-6">
+            <h4 class="text-white">Any Question?</h4>
+            <h1 class="font-weight-bold mb-5 mt-3 text-primary">Drop Me A Line</h1>
+            <form id="contact-form" role="form">
+              <div class="controls text-white">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group"> <label for="form_name">Firstname</label> <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname" required="required" data-error="Firstname is required."> </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group"> <label for="form_lastname">Lastname</label> <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required."> </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="form_email">Email</label>
+                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="form_phone">Phone</label>
+                      <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="form-group"> <label for="form_message">Message</label>
+                      <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <button type="submit" class="btn btn-info text-white px-5 font-weight-bold">Send Message</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- End: Section 7 - Contact -->
+    </div>
+
+  <!-- Start: Footer -->
+  <footer>
+    <div class="bg-secondary container-fluid p-3 position-relative text-center">
+      <nav class="navbar navbar-dark navbar-expand-xs px-180 px-xl-500 py-0">
+        <ul class="d-flex flex-wrap justify-content-center navbar-nav">
+          <li class="mr-4 nav-item">
+            <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="mr-4 nav-item">
+            <a class="nav-link" href="#">ABOUT</a>
+          </li>
+          <li class="mr-4 nav-item">
+            <a class="nav-link" href="#">SERVICES</a>
+          </li>
+          <li class="mr-4 nav-item">
+            <a class="nav-link" href="#">WORKS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Start: Footer Credits (Mobile Only) -->
+      <p class="d-md-none mb-0 mt-3 text-white" style="font-size: 14px;">
+        <strong>© <a href="=&quot;javascript:void(0);&quot;" class="text-white">SmithJohnson</a>
+        2020 | All Rights Reserved</strong>
+      </p>
+      <!-- End: Footer Credits -->
+    </div>
+  </footer>
+  <!-- End: Footer -->
   <script src="js/main.js"></script>
+  <!-- CDN to make Scrollspy works properly -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+
+    //Variables Declarions Goes Here!
+    flagHome = flagAbout = flagServices = flagSkills = flagWorks = flagContact = true;
+    var $window = $(window);
+    
+    // Sections IDs Strings
+    var home = "#home";
+    var description = "#description";
+    var services = "#services";
+    var expertise = "#expertise";
+    var portfolio = "#portfolio";
+    var contact = "#contact";
+
+    $(document).ready(function () {
+      //Top Menu Adding/Removing Bg Dark on Page Load
+      if ($(this).scrollTop() > 1) {
+        $("#top-menu").addClass("bg-dark");
+      }else{
+        $("#top-menu").removeClass("bg-dark");
+      }
+
+      gsap.to($(description).find('h3, h1, h4, p'), {duration: 0.5, opacity: 0});
+      gsap.to($(description).find('.btn'), {duration: 0.5, opacity: 0});
+      gsap.to($(description).find('.badge-alt'), {duration: 0.5, opacity: 0});
+
+      gsap.to($(services).find('h3'), {duration: 0.5, opacity: 0});
+      gsap.to($(services).find('h1'), {duration: 0.5, opacity: 0});
+      gsap.to($(services).find('.card'), {duration: 0.5, opacity: 0});
+
+      gsap.to($(expertise).find('h3'), {duration: 0.5, opacity: 0});
+      gsap.to($(expertise).find('h1'), {duration: 0.5, opacity: 0});
+      gsap.to($(expertise).find('h4'), {duration: 0.5, opacity: 0});
+      gsap.to($(expertise).find('p'), {duration: 0.5, opacity: 0});
+      gsap.to($(expertise).find('button'), {duration: 0.5, opacity: 0});
+      gsap.to($(expertise).find('h5'), {duration: 0.5, opacity: 0});
+      gsap.to($(expertise).find('.progress'), {duration: 0.5, opacity: 0});
+
+      gsap.to($(portfolio).find('h3'), {duration: 0.5, opacity: 0});
+      gsap.to($(portfolio).find('h1'), {duration: 0.5, opacity: 0});
+      gsap.to($(portfolio).find('.nav-link'), {duration: 0.5, opacity: 0});
+      gsap.to($(portfolio).find('.img-project'), {duration: 0.5, opacity: 0});
+
+      gsap.to($(contact).find('.col-lg-5 h1'), {duration: 0.5, opacity: 0});
+      gsap.to($(contact).find('.col-lg-5 p'), {duration: 0.5, opacity: 0});
+      gsap.to($(contact).find('.col-lg-7'), {duration: 0.5, opacity: 0});
+
+    });
+
+    //Top Menu Removong Bg Dark on Scrolling
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 1) {
+        $("#top-menu").addClass("bg-dark");
+      } else {
+        $("#top-menu").removeClass("bg-dark");
+      }
+    });
+
+    //Scroll Spy Funtion
+    $('body').scrollspy({ target: '#top-menu' })
+
+    //Generate Random Numbers
+    function randomIntFromInterval(min, max) {
+      return Math.floor(Math.random() * (max - min + 1) + min)
+    }
+
+    // Add smooth scrolling on all links inside the navbar
+    $("#top-menu a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top - 97
+        }, 800);
+      }
+    });
+
+      ///////////////////////////////////
+     //  Sections Effect Starts Here  //
+    ///////////////////////////////////
+
+    //Home Menu/Section Effect
+    function homeEffect(flagHome, spy) {
+      if(flagHome && spy == "#home"){
+        gsap.fromTo($(spy).find('img, svg'), {duration: 0.5, x: 100, opacity: 0}, {duration: 0.5, x: 0, opacity: 1, delay: 0.5});
+        gsap.fromTo($(spy).find('h3'), {duration: 0.5, x: -100, opacity: 0}, {duration: 0.5, x: 0, opacity: 1, delay: 1});
+        gsap.fromTo($(spy).find('h1'), {duration: 0.5, x: -100, opacity: 0}, {duration: 0.5, x: 0, opacity: 1, delay: 1.3});
+        gsap.fromTo($(spy).find('p'), {duration: 0.5, x: -200, opacity: 0}, {duration: 0.5, x: 0, opacity: 1, delay: 1.5});
+        gsap.fromTo($(spy).find('button'), {duration: 0.5, opacity: 0, scale: 0.5, stagger: 0.5}, {duration: 0.5, opacity: 1,scale: 1, delay: 1.8, stagger: 0.5});
+      }
+      this.flagHome = false;
+    }
+  
+    //About Menu/Section Effect
+    function aboutEffect(flagAbout, spy) {
+      //About Menu Click Effects
+      if(flagAbout && spy == "#description"){
+        gsap.fromTo($(spy).find('h3, h1, h4, p'), {duration: 1, y: 300, opacity: 0}, {duration: 1, ease: "circ.inOut", y: 0, opacity: 1, delay: 0.5});
+        gsap.fromTo($(spy).find('.btn'), {duration: 1, x: -300, opacity: 0}, {duration: 1, x: 0, opacity: 1, delay: 1});
+        gsap.fromTo($(spy).find('.badge-alt'), {duration: 1, opacity: 0, scale: 0.5, stagger: 0.5}, {duration: 1, opacity: 1, ease: "slow (0.7, 0.7, false)", scale: 1, stagger: 0.5});
+
+        //Counter Function
+        $('.badge-alt').each(function () {
+          $(this).prop('counter',0).animate({
+              counter: $(this).attr('counter')
+          }, {
+              duration: 5000,
+              easing: 'swing',
+              step: function (now) {
+                $(this).attr('counter',Math.ceil(now))
+              }
+          });
+        });
+
+        this.flagAbout = false;
+      }
+    }
+
+    // Services Menu/Section Effects
+    function servicesEffects(flagServices, spy) {
+      if(flagServices && spy == "#services"){
+        gsap.fromTo($(spy).find('h3'), {duration: 1, x: -100, opacity: 0}, {duration: 0.5, x: 0, opacity: 1});
+        gsap.fromTo($(spy).find('h1'), {duration: 1, y: 100, opacity: 0}, {duration: 0.5, y: 0, opacity: 1});
+        gsap.fromTo($(spy).find('.card'), {duration: 1, y: 300, ease: "power4.out", opacity: 0, stagger: 0.5}, {duration: 1, y: 0, ease: "power4.out", opacity: 1, stagger: 0.5});
+        
+        this.flagServices = false;
+      }
+    }
+
+    //Skills Menu/Section Effects
+    function skillsEffects(flagSkills, spy) {
+      if(flagSkills && spy == "#expertise"){
+        gsap.fromTo($(spy).find('h3'), {duration: 1, y: 100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 0.2});
+        gsap.fromTo($(spy).find('h1'), {duration: 1, y: 100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 0.4});
+        gsap.fromTo($(spy).find('h4'), {duration: 1, y: 100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 0.6});
+        gsap.fromTo($(spy).find('p'), {duration: 1, y: 100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 0.8});
+        gsap.fromTo($(spy).find('button'), {duration: 1, y: 100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 1});
+
+        gsap.fromTo($(spy).find('h5'), {duration: 1, y: -100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 1.5, stagger: 0.2});
+        gsap.fromTo($(spy).find('.progress'), {duration: 1, y: -100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 0.5, stagger: 0.5});
+        gsap.fromTo($(spy).find('[data-name="skill-1"]'), {duration: 1, width: 0}, {duration: 1, width: '90%', ease: "bounce.out", delay: 2});
+        gsap.fromTo($(spy).find('[data-name="skill-2"]'), {duration: 1, width: 0}, {duration: 1, width: '75%', ease: "bounce.out", delay: 2});
+        gsap.fromTo($(spy).find('[data-name="skill-3"]'), {duration: 1, width: 0}, {duration: 1, width: '100%', ease: "bounce.out", delay: 2});
+        gsap.fromTo($(spy).find('[data-name="skill-4"]'), {duration: 1, width: 0}, {duration: 1, width: '60%', ease: "bounce.out", delay: 2});
+        gsap.fromTo($(spy).find('[data-name="skill-5"]'), {duration: 1, width: 0}, {duration: 1, width: '85%', ease: "bounce.out", delay: 2});
+
+        this.flagSkills = false;
+      }
+    }
+
+    //Portfolio Menu/Section Effects
+    function portfolioEffects(flagWorks, spy) {
+      if(flagWorks && spy == "#portfolio"){
+        gsap.fromTo($(spy).find('h3'), {duration: 1, x: -100, opacity: 0}, {duration: 1, x: 0, opacity: 1, delay: 0});
+        gsap.fromTo($(spy).find('h1'), {duration: 1, x: -100, opacity: 0}, {duration: 1, x: 0, opacity: 1, delay: 0.5});
+        gsap.fromTo($(spy).find('.nav-link'), {duration: 1, x: 100, opacity: 0}, {duration: 1, x: 0, opacity: 1, delay: 0.8, stagger: 0.3});
+        gsap.fromTo($(spy).find('.img-project'), {duration: 1, y: 100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 0.9, stagger: 0.3});
+        
+        this.flagWorks = false;
+      }
+    }
+
+    //Contact Menu/Section Effects
+    function contactEffects(flagContact, spy) {
+      if(flagContact && spy == "#contact"){
+        gsap.fromTo($(spy).find('.col-lg-5 img'), {duration: 1, scale: 0}, {duration: 1, scale: 1, delay: 0});
+        gsap.fromTo($(spy).find('.col-lg-5 h1'), {duration: 1, y: 100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 1});
+        gsap.fromTo($(spy).find('.col-lg-5 p'), {duration: 1, y: 100, opacity: 0}, {duration: 1, y: 0, opacity: 1, delay: 1});
+        gsap.fromTo($(spy).find('.col-lg-7'), {duration: 1, opacity: 0}, {duration: 1.5, opacity: 1, delay: 1});
+
+        this.flagContact = false;
+      }
+    }
+
+    //Display Projects Infos on Hover
+    $('.img-project').hover(function () {
+      // over
+      $(this).find('.img-caption').css('transform','scale(1)')
+    }, function () {
+      // out
+      $(this).find('.img-caption').css('transform','scale(0)')
+    });
+
+    ////////////////////////////////////////////////////////////////////////
+
+    //On Scroll Animations for sections
+    $(window).scroll(function(event) {
+      var lastScrollTop = 0;
+
+      var winTop = $(this).scrollTop();
+      var $animation_elements = $('.section');
+      var window_height = $window.height();
+      var window_top_position = $window.scrollTop();
+      var window_bottom_position = (window_top_position + window_height);
+
+      var top = $.grep($animation_elements, function(item) {
+        var $element = $(item);
+        var element_height = $element.outerHeight();
+        var element_top_position = $element.offset().top + 250;
+        var element_bottom_position = (element_top_position + element_height);
+
+        //check to see if this current container is within viewport
+        if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+          $section = $(item).last().attr('id');
+          
+          switch ($section) {
+            case "home":
+              homeEffect(flagHome, home);
+              break;
+
+            case "description":
+              aboutEffect(flagAbout, description);
+              break;
+            
+            case "services":
+              servicesEffects(flagServices, services);
+              break;
+
+            case "expertise":
+              skillsEffects(flagSkills, expertise);
+              break;
+            
+            case "portfolio":
+              portfolioEffects(flagWorks, portfolio);
+              break;
+
+            case "contact":
+              contactEffects(flagContact, contact);
+              break;
+          
+            default:
+              break;
+          }
+        }
+      });
+    });
+
+    $window.trigger('scroll');
+
+  </script>
+  
+
 </body>
+
 </html>

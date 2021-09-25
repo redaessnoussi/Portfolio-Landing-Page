@@ -1,0 +1,21 @@
+.card-icon::before {
+  content: attr(icon);
+  height: 70px;
+  width: 70px;
+  background: $info;
+  position: absolute;
+  border-radius: $border-radius;
+  margin-top: -35px;
+  margin-left: 20px;
+  box-shadow: $box-shadow;
+}
+
+.card-icon {
+  .icon {
+    position: absolute;
+    font-size: 40px;
+    margin-top: -20px;
+    margin-left: 35px;
+    color: $white;
+  }
+}

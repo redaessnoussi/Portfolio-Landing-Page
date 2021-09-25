@@ -1,0 +1,29 @@
+.badge-alt {
+  overflow-wrap: break-word;
+  position: relative;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &::before {
+    content: attr(counter);
+    background-color: $info;
+    color: $white;
+    width: 55px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 20px;
+    top: -10px;
+    left: -10px;
+    box-shadow: 0.225rem 0.215rem 0.25rem rgba($black, .50);
+  }
+  span{
+    margin-top: 12px; 
+  }
+}
